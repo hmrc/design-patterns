@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Shutter pages
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">Shutter pages</h1>
+
+      <p>
+        This is a list and links to all the shutter pages as of 9am on 22 March 2016.
+      </p>
+
+      <p>
+        The pages are all hardcoded HTML. This means there may be odd formatting, old beta banners, wrong font sizes – these can be changed with inline styles.
+      </p>
+	  
+	  <p>I have added a <a href="https://drive.google.com/drive/folders/0B78ZXMD1zTfdQmMxUDdRUGNJcUE" target="_blank">folder in Google Drive (opens in a new window or tab)</a> with a document about user needs and general observations from the pages that are there.</p>
+
+      
+		<h2 class="heading-small">Agent services</h2>
+	  		<p><a href="agent">Maintenance</a> and <a href="agent-promo-closed">can't join today</a></p>
+		<h2 class="heading-small">Annual Tax on Enveloped Dwellings (ATED)</h2>
+			<p><a href="ated">Private beta</a> and <a href="ated-planned">maintenance</a></p>			
+			<p>ATED subscriptions versions: <a href="ated-subscription">private beta</a> and <a href="ated-subscription-planned">maintenance</a>.</p>
+		<h2 class="heading-small">Annual tax summary</h2>
+			<p><a href="ats">Technical difficulties</a></p>
+		<h2 class="heading-small">Alcohol Wholesaler Registration Scheme (AWRS)</h2>
+		<p><a href="awrs">Scheduled maintenance</a> and <a href="awrs-offswitch">emergency shutter</a> (taken from <a href="https://github.tools.tax.service.gov.uk/HMRC/puppet/tree/master/modules/hmrc_nginx/files/local-cache">local-cache folder in puppet</a>)</p>
+		<h2 class="heading-small">Business Registration Service</h2>
+			<p><a href="business-customer">Being updated</a></p>
+		<h2 class="heading-small">Company Account and Tax Online (CATO)</h2>
+			<p><a href="cato">Maintenance</a></p>
+		<h2 class="heading-small">Charities Services</h2>
+			<p><a href="charities">Technical difficulties</a></p>
+		<h2 class="heading-small">Tax-Free Childcare Calculator</h2>
+			<p><a href="childcare-calculator">Unavailable</a> and <a href="childcare-calculator-maintenance">maintenance</a> (this page <a href="https://github.tools.tax.service.gov.uk/HMRC/puppet/blob/master/modules/hmrc_nginx/files/cc-outage/maintenance.html">in puppet</a> will not display in a browser because of the page's HTML)</p>
+		<h2 class="heading-small">Company Auth</h2>
+			<p><a href="company-auth">Unavailable</a> and <a href="company-auth-maintenance">maintenance</a></p>
+		<h2 class="heading-small">Civil Service apprenticeship</h2>
+			<p><a href="csr-fasttrack">Issue with the service</a></p>
+		<h2 class="heading-small">Company car</h2>
+			<p><a href="company-car">Maintenance</a></p>
+		<h2 class="heading-small">Digital Forms Service</h2>
+			<p><a href="dfs">Maintenance</a></p>
+		<h2 class="heading-small">Employment intermediaries</h2>
+			<p><a href="ei">Unavailable</a> and <a href="ei-maintenance">maintenance</a></p>
+		<h2 class="heading-small">Employment Related Securities (ERS)</h2>
+			<p><a href="ers">Unavailable</a></p>
+		<h2 class="heading-small">Employment Related Securities (ERS) – checking service</h2>
+			<p><a href="ers-checking">Unavailable</a></p>
+		<h2 class="heading-small">Rent and lease details</h2>
+			<p><a href="for">Unavailable</a> and <a href="for-maintenance">maintenance</a></p>
+			<p>These pages are the same.</p>
+		<h2 class="heading-small">Identity Verification</h2>
+			<p><a href="identity-verification">Maintenance</a></p>			
+		<h2 class="heading-small">Inheritance Tax</h2>
+			<p><a href="inheritance-tax">Technical difficulties</a> and <a href="inheritance-tax-maintenance">maintenance</a></p>
+		<h2 class="heading-small">Marriage Allowance Registration</h2>
+			<p><a href="marriage-allowance">Maintenance</a></p>
+		<h2 class="heading-small">Migration payments</h2>
+			<p><a href="migration-payments-down">Scheduled maintenance with link to GOV.UK</a> and <a href="migration-payments-up">scheduled maintenance with a link to online payments</a> (both taken from the <a href="https://github.tools.tax.service.gov.uk/HMRC/puppet/tree/master/modules/hmrc_nginx/files/local-cache">local-cache folder in puppet</a>)</p>
+		<h2 class="heading-small">Check my State Pension</h2>
+			<p><a href="nisp">Maintenance</a></p>
+		<h2 class="heading-small">Payments</h2>
+			<p><a href="payments">Technical difficulties</a></p>
+		<h2 class="heading-small">Payrolling Benefits in Kind Online</h2>
+			<p><a href="pbik">Maintenance</a> and <a href="pbik-maintenance">maintenance with extra information</a></p>
+		<h2 class="heading-small">Your personal tax account</h2>
+			<p><a href="pertax">Technical difficulties</a></p>
+		<h2 class="heading-small">Calculate Stamp Duty Land Tax</h2>
+			<p><a href="sdltc">Closed</a> and <a href="sdltc-maintenance">maintenance</a></p>
+		<h2 class="heading-small">Your PAYE Income Tax explained</h2>
+			<p><a href="tai">Technical difficulties</a> and <a href="tai-planned">maintenance</a></p>
+		<h2 class="heading-small">Tax credits calculator</h2>
+			<p><a href="tcc">Closed</a> and <a href="tcc-maintenance">maintenance</a></p>
+		<h2 class="heading-small">Renew your Tax Credits Service</h2>
+			<p><a href="tcr">Unavailable</a> and <a href="tcr-closed">not available until 21 April 2016</a></p>
+		<h2 class="heading-small">Tax Credits Service</h2>
+			<p><a href="tcs">Not available</a></p>
+		<h2 class="heading-small">Tracking Service</h2>
+			<p><a href="tracking">Maintenance</a></p>
+		<h2 class="heading-small">Trusted helpers</h2>
+			<p><a href="trusted-helpers">Maintenance with date placeholders</a> and <a href="trusted-helpers-maintenance">maintenance with actual dates</a></p>
+		<h2 class="heading-small">Your tax account</h2>
+			<p><a href="yta">Technical difficulties</a></p>			
+			
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
