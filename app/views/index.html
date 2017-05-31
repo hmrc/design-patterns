@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout-template.html" %}
 
 {% block page_title %}
   Shutter pages
@@ -10,86 +10,18 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <h1 class="heading-xlarge">Shutter pages</h1 >
+      <h1 class="heading-xlarge">HMRC design patterns</h1 >
 
-        <p>A shutter page is a page that is shown when a service has been switched off on purpose. These are different to page not found and technical difficulties pages.</p>
+      <h2 class="heading-large">Standard pages</h2>
+      <p>These are pages that every HMRC service should contain.</p>
 
-        <p>Wherever possible, a shutter page should include:</p>
+      <ul>
+        <li><a href="pages/shutter-pages/index">Shutter pages</a></li>
+        <li><a href="pages/404-pages/index">404 pages</a></li>
+        <li><a href="pages/500-pages/index">500 pages</a></li>
+      </ul>
 
-        <ul class="list-bullet">              
-          <li>the day, date and time the service is going to be back</li>
-          <li>other ways for someone to do what they need to do, if there are any</li>
-        </ul>
-
-        <p>Have a general page that does not include the day, date and time so a service can be shuttered quickly, before the content can be updated. But update the content as fast as possible.</p>
-
-        <p>The page should:</p>
-
-        <ul class="list-bullet">
-          <li>have “Service unavailable” as the page title and H1</li>
-          <li>include the service title to reassure people they are in the right service</li>
-          <li>not have alpha or beta banners</li>
-          <li>not have breadcrumbs</li>          
-          <li>be clear and concise</li>
-          <li>not use vague terms like maintenance or jargon like private beta</li>
-          <li>not use red text to warn people</li>
-        </ul>
-
-        <h2 class="heading-medium">General page</h2>
-
-        <p>This is a placeholder that can be used quickly if there is no time to change the content.</p>
-
-        <ul class="list-bullet">          
-          <li><a href="pages/tc-general">Example 1</a>: a service that has a contact page on GOV UK</li>
-          <li><a href="pages/ei-general">Example 2</a>: a service that has a contact number, but no contact page</li>
-          <li><a href="pages/amls-general">Example 3</a>: a service that has no offline support</li>
-        </ul>
-    
-        <h2 class="heading-medium">Day, date and time</h2>
-
-        <p>This includes the helpful day, date and time information when a service will be available.</p>
-
-        <ul class="list-bullet">          
-          <li><a href="pages/tc-shutter">Example 1</a>: a service that has a contact page on GOV UK</li>
-          <li><a href="pages/ei-shutter">Example 2</a>: a service that has a contact number, but no contact page</li>
-          <li><a href="pages/amls-shutter">Example 3</a>: a service that has no offline support</li>
-        </ul>
-
-        <h2 class="heading-medium">Service closed 1</h2>
-
-        <p>This is for a service, like tax credit renewals, that is only open for part of the year.</p>
-
-        <ul class="list-bullet">          
-          <li><a href="pages/tc-closed">Example 1</a>: a service that has a contact page on GOV UK</li>
-          <li><a href="pages/ei-closed">Example 2</a>: a service that has a contact number, but no contact page</li>
-          <li><a href="pages/amls-closed">Example 3</a>: a service that has no offline support</li>
-        </ul>
-
-        <h2 class="heading-medium">Service closed 2</h2>
-
-        <p>This is for a service that has been permanently closed. You should try and provide information about what has replaced it or what people need to do if they have outstanding questions.</p>
-
-        <ul class="list-bullet">
-          <li><a href="pages/tc-permanent">Example 1</a>: a service that has a contact page on GOV UK</li>
-          <li><a href="pages/ei-permanent">Example 2</a>: a service that has a contact number, but no contact page</li>
-          <li><a href="pages/amls-permanent">Example 3</a>: a service that has no offline support</li>
-        </ul>
-
-        <h2 class="heading-medium">Not available yet</h2>
-
-        <p>This is for a service that has not opened yet. This could be for tax credit renewals, which opens in April, or for a service that has been published but is not open until a specific day. These pages may be the same as the day, date and time pages.</p>
-
-        <ul class="list-bullet">          
-          <li><a href="pages/tc-notyet">Example 1</a>: a service that has a contact page on GOV UK (contact details have been removed to prevent phone calls)</li>
-          <li><a href="pages/ei-notyet">Example 2</a>: a service that has a contact number, but no contact page</li>
-          <li><a href="pages/amls-notyet">Example 3</a>: a service that has no offline support</li>
-        </ul>
-
-        <h2 class="heading-medium">Research</h2>
-
-        <p><a href="outage">New concepts</a></p>
-
-        <p><a href="originals/index">Pages from puppet as of 9am on 22 March 2016</a></p>
+       
 
     </div>
 
