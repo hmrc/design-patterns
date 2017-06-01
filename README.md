@@ -1,27 +1,14 @@
-# GOV.UK Prototype kit
+# HMRC design pattern documentation
+This repo contains examples of design patterns used in HMRC services
 
-Go to the [GOV.UK Prototype Kit site](https://govuk-prototype-kit.herokuapp.com/docs) to download the latest version and read the documentation.
+## Documenting patterns
+If you are working on a pattern for an HMRC service and it's not covered in the [issues](https://github.com/hmrc/design-language-documentation/issues) in this repo please create an issue.
+## Hosting
+This repo is published to https://hmrc-design-patterns.herokuapp.com/
 
-## About the prototype kit
+Patterns are documented at http://hmrc-design-language-prototype.herokuapp.com/design-patterns/patterns/
 
-The prototype kit provides a simple way to make interactive prototypes that look like pages on GOV.UK. These prototypes can be used to show ideas to people you work with, and to do user research.
+## Contributing
 
-Read the [project principles](https://govuk-prototype-kit.herokuapp.com/docs/principles).
+To follow
 
-## Security
-
-If you publish your prototypes online, they **must** be protected by a [username and password](https://govuk-prototype-kit.herokuapp.com/docs/publishing-on-heroku). This is to prevent members of the public finding prototypes and thinking they are real services.
-
-You must protect user privacy at all times, even when using prototypes. Prototypes made with the kit look like GOV.UK, but do not have the same security provisions. Always make sure you are handling user data appropriately.
-
-## Installation instructions
-
-- [Installation guide for new users (non technical)](https://govuk-prototype-kit.herokuapp.com/docs/install/introduction)
-- [Installation guide for developers (technical)](https://govuk-prototype-kit.herokuapp.com/docs/install/developer-install-instructions)
-
-## Community
-
-We have two Slack channels for the Prototype kit. You'll need a government email address to join them.
-
-* [Slack channel for users of the prototype kit](https://ukgovernmentdigital.slack.com/messages/prototype-kit/)
-* [Slack channel for developers of the prototype kit](https://ukgovernmentdigital.slack.com/messages/prototype-kit-dev/)
