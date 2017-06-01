@@ -1,0 +1,51 @@
+{% extends "layout-template.html" %} {% block page_title %} 404 pages {% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">404 pages</h1>
+
+      <h2 class="heading-medium">Standard 404 page</h2>
+      <p>Use <a href="404-standard">this page</a> when the page that the user is looking for.</p>
+
+      <h2 class="heading-medium">intelligent 404 page</h2>
+      <p>Use <a href="404-intelligent">this page</a> when a user has clicked a link in the service and the page they requested
+        is not there.</p>
+
+        <hr>
+
+      <h2 class="heading-small">Notes</h2>
+      <ul class="list-bullet">
+        <li>this is a content design problem</li>
+        <li>there are two senarios either the user made a mistake or HMRC made a mistake</li>
+        <li>
+          <p>if we made a mistake we can:</p>
+          <ul class="list-bullet">
+            <li>tell them that their work is safe</li>
+            <li>help them to get back to a place where they can continue from</li>
+            <li>tell them that we are trying to resolve the broken link</li>
+            <li>point them to an alternative route if there is one avalible; such as phone support</li>
+          </ul>
+        </li>
+        <li>
+          <p>If they made a mistake we can:</p>
+          <ul class="list-bullet">
+            <li>ask them to check the link</li>
+            <li>help them to get to a place where they were trying to get to We can&#39;t rely on telling them that they typed
+              the link incorrectly as they may have cut and pasted the link from an email</li>
+          </ul>
+        </li>
+      </ul>
+
+
+
+
+
+
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}
