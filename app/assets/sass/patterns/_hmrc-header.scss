@@ -1,11 +1,16 @@
 .service-info {
-  border-bottom: 1px solid #dee0e2;
+  border-bottom: 1px solid #bfc1c3;
   border-top: 0px !important;
-//   added border-top to overide blue bar that's applied to the top of the banner
+  // added border-top to overide blue bar that's applied to the top of the banner
+  padding-bottom: 0px !important;
   
 }
 .service-info .logo {
   width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px !important;
+  margin-top: 0 !important;
 }
 @media (min-width: 641px) {
   .service-info .last-login {
@@ -27,4 +32,9 @@
 //   hacked line-height to get the layout right
   line-height: 23px; 
   text-transform: none;
+}
+
+.service-info .last-login{
+  padding-top: 10px;
+  margin-top: 0 !important;
 }
