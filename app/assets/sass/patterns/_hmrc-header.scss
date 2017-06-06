@@ -1,0 +1,30 @@
+.service-info {
+  border-bottom: 1px solid #dee0e2;
+  border-top: 0px !important;
+//   added border-top to overide blue bar that's applied to the top of the banner
+  
+}
+.service-info .logo {
+  width: auto;
+}
+@media (min-width: 641px) {
+  .service-info .last-login {
+    text-align: right;
+  }
+}
+@media (min-width: 769px) {
+  .service-info .last-login {
+    float: right;
+    width: 66%;
+  }
+}
+.service-info p {
+  margin-bottom: 0;
+    color: #6f777b;
+  font-family: nta,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+//   hacked line-height to get the layout right
+  line-height: 23px; 
+  text-transform: none;
+}
