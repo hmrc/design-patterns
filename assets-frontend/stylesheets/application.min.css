@@ -166,7 +166,7 @@ nav.help-contents ul:after,
     border: 0
 }
 
-div,
+/*div,
 span,
 h1,
 h2,
@@ -245,9 +245,9 @@ mark {
     border: none;
     margin: 0;
     padding: 0
-}
+}*/
 
-h1,
+/*h1,
 h2,
 h3,
 h4,
@@ -281,7 +281,7 @@ td {
     font-family: inherit;
     line-height: inherit;
     font-weight: normal
-}
+}*/
 
 #content {
     font-family: "nta", Arial, sans-serif;
