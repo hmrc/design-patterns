@@ -1,0 +1,31 @@
+
+// Sets the size and position of iframes for screens
+.wrap {
+    width: 646px;
+    height: 410px;
+    padding: 0;
+    overflow: hidden;
+
+    @include box-sizing(border-box);
+    border: 1px solid $border-colour;
+    padding: 10px;
+    margin: $gutter-half 0 0 0;
+}
+
+iframe {
+    width: 1280px;
+    height: 786px;
+    border: 0;
+
+    -ms-transform: scale(0.49);
+    -moz-transform: scale(0.49);
+    -o-transform: scale(0.49);
+    -webkit-transform: scale(0.49);
+    transform: scale(0.49);
+
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
