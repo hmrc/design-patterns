@@ -1423,13 +1423,14 @@ details .email-notifications__indent {
 
 menu,
 ol,
-ul {
+/*ul */
+{
     margin-top: 5px;
     margin-bottom: 20px;
     padding: 0
 }
 
-ul,
+/*ul,
 ol {
     list-style-type: none
 }
@@ -1447,7 +1448,7 @@ ol li {
 .list-number {
     list-style-type: decimal;
     margin-left: 25px
-}
+}*/
 
 .panel-indent,
 .email-notifications__indent {
@@ -4586,16 +4587,16 @@ img {
     max-width: 100%
 }
 
-ul {
+/*ul {
     padding: 0;
     margin: 0
-}
+}*/
 
 li {
     list-style-position: inside
 }
 
-ul,
+/*ul,*/
 nav ul {
     list-style-type: none
 }
@@ -4617,11 +4618,11 @@ nav ul li {
     }
 }
 
-.bullets {
+/*.bullets {
     list-style-type: disc;
     list-style-position: inside;
     margin-left: 1em
-}
+}*/
 
 .lower-letters {
     list-style-type: lower-alpha
@@ -11269,9 +11270,9 @@ article ol {
     margin: 0.75em 0
 }
 
-ol {
+/*ol {
     padding: 0 0 0 40px
-}
+}*/
 
 li {
     list-style-position: outside
