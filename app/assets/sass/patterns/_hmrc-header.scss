@@ -1,0 +1,40 @@
+.service-info {
+  border-bottom: 1px solid #bfc1c3;
+  border-top: 0px !important;
+  // added border-top to overide blue bar that's applied to the top of the banner
+  padding-bottom: 0px !important;
+  
+}
+.service-info .logo {
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px !important;
+  margin-top: 0 !important;
+}
+@media (min-width: 641px) {
+  .service-info .last-login {
+    text-align: right;
+  }
+}
+@media (min-width: 769px) {
+  .service-info .last-login {
+    float: right;
+    width: 66%;
+  }
+}
+.service-info p {
+  margin-bottom: 0;
+    color: #6f777b;
+  font-family: nta,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+//   hacked line-height to get the layout right
+  line-height: 23px; 
+  text-transform: none;
+}
+
+.service-info .last-login{
+  padding-top: 10px;
+  margin-top: 0 !important;
+}
