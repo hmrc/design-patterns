@@ -683,7 +683,7 @@ code {
     margin: 0
 }
 
-.phase-banner {
+/*.phase-banner {
     padding: 10px 0 8px 0;
     border-bottom: 1px solid #bfc1c3
 }
@@ -755,7 +755,7 @@ code {
         width: auto;
         vertical-align: baseline
     }
-}
+}*/
 
 .grid-wrapper:after {
     content: "";
@@ -2178,7 +2178,7 @@ th {
     font-family: "nta", Arial, sans-serif
 }
 
-html,
+/*html,
 body,
 div,
 h1,
@@ -2197,7 +2197,7 @@ section {
     margin: 0;
     padding: 0;
     vertical-align: baseline
-}
+}*/
 
 .group:before,
 .group:after {
@@ -6792,88 +6792,7 @@ select.form-control {
     }
 }
 
-.header__menu__proposition-name {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    font-weight: 700;
-    text-decoration: none;
-    color: #fff
-}
 
-@media (max-width: 640px) {
-    .header__menu__proposition-name {
-        font-size: 20px;
-        line-height: 1.2
-    }
-}
-
-a.header__menu__proposition-name:hover,
-.header__menu__proposition-name.link-style:hover,
-.header__menu__proposition-name.button--link-style:hover,
-a.header__menu__proposition-name:focus,
-.header__menu__proposition-name.link-style:focus,
-.header__menu__proposition-name.button--link-style:focus,
-a.header__menu__proposition-name:active,
-.header__menu__proposition-name.link-style:active,
-.header__menu__proposition-name.button--link-style:active {
-    text-decoration: underline
-}
-
-.header__menu__proposition-links {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.25;
-    font-weight: 300;
-    text-transform: none;
-    font-weight: 700;
-    float: right;
-    list-style-type: none;
-    padding: 0;
-    margin: 0
-}
-
-@media (max-width: 640px) {
-    .header__menu__proposition-links {
-        font-size: 14px;
-        line-height: 1.14286
-    }
-}
-
-@media (max-width: 800px) {
-    .header__menu__proposition-links {
-        width: 100%
-    }
-}
-
-.header__menu__proposition-links li {
-    display: inline;
-    padding-right: .78947em
-}
-
-.header__menu__proposition-links a,
-.header__menu__proposition-links .link-style,
-.header__menu__proposition-links .button--link-style {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.25;
-    font-weight: 300;
-    text-transform: none;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none
-}
-
-@media (max-width: 640px) {
-    .header__menu__proposition-links a,
-    .header__menu__proposition-links .link-style,
-    .header__menu__proposition-links .button--link-style {
-        font-size: 14px;
-        line-height: 1.14286
-    }
-}
 
 .attorneyBanner {
     z-index: 999;
@@ -7244,7 +7163,7 @@ a.header__menu__proposition-name:active,
     }
 }
 
-.beta-banner {
+/*.beta-banner {
     padding: 10px 0 8px 0;
     border-bottom: 1px solid #bfc1c3
 }
@@ -7302,27 +7221,27 @@ a.header__menu__proposition-name:active,
         font-size: 14px;
         line-height: 1.14286
     }
-}
+}*/
 
-.beta-banner span {
+/*.beta-banner span {
     display: -moz-inline-stack;
     display: inline-block;
     width: 75%;
     vertical-align: top
-}
+}*/
 
 @media (min-width: 641px) {
-    .beta-banner span {
+    /*.beta-banner span {
         width: auto;
         vertical-align: baseline
-    }
+    }*/
 }
 
 .beta-banner--borderless {
     border: none
 }
 
-.phase-tag {
+/*.phase-tag {
     display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top;
@@ -7339,7 +7258,7 @@ a.header__menu__proposition-name:active,
     text-decoration: none;
     color: #fff;
     background-color: #f47738
-}
+}*/
 
 @media (min-width: 641px) {
     .phase-tag {
@@ -7361,8 +7280,8 @@ a.header__menu__proposition-name:active,
 }
 
 .service-info {
-    border-top: 10px solid #005ea5;
-    padding-bottom: 0.5em
+    /*border-top: 10px solid #005ea5;*/
+    /*padding-bottom: 0.5em*/
 }
 
 .service-info .inner {
@@ -7479,9 +7398,9 @@ a.header__menu__proposition-name:active,
     display: block
 }
 
-.last-login {
+/*.last-login {
     margin-bottom: .52632em
-}
+}*/
 
 .last-login__more-details {
     margin: .26316em 0 0 0
@@ -8185,114 +8104,6 @@ only screen and (min-resolution: 2dppx) {
 
 .js-datatable-wrapper .controlpanel {
     float: left
-}
-
-.organisation-logo,
-.organisation-logo-stacked {
-    font-family: Helvetica, Arial;
-    font-weight: 400;
-    display: block;
-    position: relative;
-    font-size: 13px;
-    line-height: 16px;
-    text-decoration: none;
-    padding: 3px 0 2px 30px;
-    background-image: url("../images/icons/crests/hmrc_crest_13px.png");
-    background-position: 5px center;
-    background-repeat: no-repeat;
-    border-left: 2px solid #009390
-}
-
-.organisation-logo:link,
-.organisation-logo-stacked:link,
-.organisation-logo:visited,
-.organisation-logo-stacked:visited {
-    color: #0b0c0c
-}
-
-.organisation-logo a,
-.organisation-logo-stacked a,
-.organisation-logo .link-style,
-.organisation-logo-stacked .link-style,
-.organisation-logo .button--link-style,
-.organisation-logo-stacked .button--link-style,
-.organisation-logo span,
-.organisation-logo-stacked span {
-    color: #0b0c0c
-}
-
-a.organisation-logo:hover,
-.organisation-logo.link-style:hover,
-.organisation-logo.button--link-style:hover,
-.button--link-style.organisation-logo-stacked:hover,
-.link-style.organisation-logo-stacked:hover,
-a.organisation-logo-stacked:hover,
-a.organisation-logo:focus,
-.organisation-logo.link-style:focus,
-.organisation-logo.button--link-style:focus,
-.button--link-style.organisation-logo-stacked:focus,
-.link-style.organisation-logo-stacked:focus,
-a.organisation-logo-stacked:focus {
-    text-decoration: underline
-}
-
-.organisation-logo-stacked {
-    padding: 20px 0 0 6px;
-    background-image: url("../images/icons/crests/hmrc_crest_13px.png");
-    background-position: 5px top
-}
-
-.organisation-logo-stacked span {
-    display: block;
-    position: relative;
-    top: 3px
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2) {
-    .organisation-logo,
-    .organisation-logo-stacked,
-    .organisation-logo-stacked {
-        background-image: url("../images/icons/crests/hmrc_crest_13px_x2.png");
-        background-size: auto 20px
-    }
-}
-
-@media (min-width: 641px) {
-    .organisation-logo-medium,
-    .organisation-logo-stacked-medium {
-        font-size: 18px;
-        line-height: 22px;
-        padding: 3px 0 2px 38px;
-        background-image: url("../images/icons/crests/hmrc_crest_18px.png");
-        background-position: 6px center;
-        border-left: 2px solid #009390;
-        white-space: nowrap
-    }
-}
-
-@media (min-width: 641px) {
-    .organisation-logo-stacked-medium {
-        padding: 25px 0 0 7px;
-        background-image: url("../images/icons/crests/hmrc_crest_18px.png");
-        background-position: 6px top
-    }
-}
-
-@media (min-width: 641px) {
-    .organisation-logo-stacked-medium span {
-        display: block;
-        position: relative;
-        top: 3px
-    }
-}
-
-@media all and (min-width: 641px) and (-webkit-min-device-pixel-ratio: 2) {
-    .organisation-logo-medium,
-    .organisation-logo-stacked-medium,
-    .organisation-logo-stacked-medium {
-        background-image: url("../images/icons/crests/hmrc_crest_18px_x2.png");
-        background-size: auto 26px
-    }
 }
 
 .report-error {
