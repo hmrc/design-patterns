@@ -10,7 +10,62 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
+      {% include "includes/back.html" %}
+
       <h1 class="heading-xlarge">HMRC Header</h1>
+
+      <p class="lede">The HMRC header is an variant of the <a href="#">GOV.UK header</a>.</p>
+
+      <h2 class="heading-large" id="header-design">Header design</h2>
+
+      <p>The HMRC logo is included for services where there is a user need to reassure users that they are using an HMRC service. For example, when they are making a payment and need to be sure that the money is going to the right governmant department.</p>
+
+      <p>More user research is needed to prove if the HMRC logo reassures users.</p>
+
+      <h2 class="heading-large" id="header-examples">Header examples</h2>
+
+      <ul class="list list-bullet">
+        <li><a href="header-no-hmrc-logo">Header - no HMRC logo</a></li>
+        <li><a href="header-signed-out">Header - signed out</a></li>
+        <li><a href="header-signed-in">Header - signed in</a></li>
+      </ul>
+
+      <h3 class="heading-small">Header without the HMRC logo</h3>
+      <div class="wrap height-150">
+        <iframe src="header-no-hmrc-logo" frameborder="0"></iframe>
+      </div>
+      <p>This is essentailly just the GOV.UK header biut it's included here for completness.</p>
+      <hr>
+
+      <h3 class="heading-small">Header signed out</h3>
+      <div class="wrap height-150">
+        <iframe src="header-signed-out" frameborder="0"></iframe>
+      </div>
+      <p>Should be used for services when there is a need to identify the service as an HMRC service.</p>
+      <p>This version of the header should contain:</p>
+      <ul class="list list-bullet">
+        <li>the GOV.UK header</li>
+        <li>a phase banner unless the service is live</li>
+        <li>HMRC logo</li>
+        <li>Welsh toggle</li>
+      </ul>
+      <hr>
+    
+      <h3 class="heading-small">Header signed in </h3>
+      <div class="wrap height-150">
+        <iframe src="header-signed-in" frameborder="0"></iframe>
+      </div>
+      <p>Should be used for services when there is a need to identify the service as an HMRC service and when users can have a signed in state.</p>
+      <p>This version of the header should contain:</p>
+      <ul class="list list-bullet">
+        <li>the GOV.UK header</li>
+        <li>a sigin out link</li>
+        <li>a phase banner unless the service is live</li>
+        <li>HMRC logo</li>
+        <li>Last logged in status</li>
+        <li>Welsh toggle</li>
+      </ul>
+
 
     </div>
   </div>
