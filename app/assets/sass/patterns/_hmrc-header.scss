@@ -218,3 +218,16 @@ a.header__menu__proposition-name:active,
         line-height: 1.14286
     }
 }
+.lang-select {
+    float: right;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.lang-select ul{
+    padding: 0.75em 0 0.55em;
+}
+.lang-select ul li {
+    display: inline;
+    margin-left: 8px;
+}
