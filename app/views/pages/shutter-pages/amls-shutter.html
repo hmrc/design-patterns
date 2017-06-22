@@ -1,11 +1,9 @@
-{% extends "layout3.html" %} {% block page_title %} Service unavailable {% endblock %} {% block content %}
+{% extends "layout.html" %} {% block page_title %} Service unavailable {% endblock %} {% block content %}
 
 <main id="content" role="main">
-  <div class="service-info">
-    <div class="logo">
-      <span class="organisation-logo organisation-logo-medium">HM Revenue &amp; Customs</span>
-    </div>
-  </div>
+  {% include "includes/phase_banner_beta.html" %}
+  {% include "includes/hmrc_logo_banner_signed_in.html" %}
+  {% include "includes/welsh_toggle.html" %}
   <div class="grid-row">
     <div class="column-two-thirds">
 
