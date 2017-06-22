@@ -8468,7 +8468,7 @@ nav.help-contents ul li p {
     background-color: #def;
     border-color: #005EA4;
     position: relative;
-    margin: .52632em 0
+    margin: .52632em 0 40px 0;
 }
 
 .alert--info.alert--info__light {
