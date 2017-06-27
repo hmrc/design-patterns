@@ -49,6 +49,9 @@ iframe {
     padding: 20px;
     @include box-sizing(border-box);
 }
+.scale-wrapper {
+    margin-bottom: em(20, 16);
+}
 
 .height-100{
     height: 100px
