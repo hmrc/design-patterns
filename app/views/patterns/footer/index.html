@@ -21,8 +21,6 @@
 
       <p class="lede">The Footer used on all HMRC services should be the standard <a href="https://www.gov.uk/service-manual/design/add-the-govuk-header-and-footer">GOV.UK footer</a>.</p>
 
-      
-
       <h2 class="heading-large">Footer design</h2>
 
       <p>The standard footer should be used on all services.  </p>
@@ -53,29 +51,23 @@
       <h2 class="heading-large">Examples</h2>
 
       <h3 class="heading-small">Footer with utility links</h3>
-      <div class="wrap height-200">
-        <iframe src="footer" frameborder="0"></iframe>
+      <div class="scale">
+        {% include "patterns/footer/includes/footer.html" %}
       </div>
       <p>Should be used on all pages that do not requre a report a problem link.</p>
 
       <hr>
 
       <h3 class="heading-small">Footer with report a problem</h3>
-      <!--<div class="wrap height-250">
-       
-      <iframe src="footer-report-a-problem" frameborder="0"></iframe>
-      </div>
-
-        <hr>-->
+      <div style="overflow: hidden;">
         <div class="scale">
-          {% include "patterns/footer/includes/footer-test.html" %}
+          {% include "patterns/footer/includes/report-a-problem.html" %}
+          {% include "patterns/footer/includes/footer.html" %}
         </div>    
-        <a href="includes/footer-test.html">view</a>
+      </div>
+        <a href="includes/footer.html">View full screen</a>
       
       <p>Should be used when we want to encorage users to tell us if there is a technical problem with a page.</p>
-
-      
-
 
     </div>
   </div>
