@@ -39,6 +39,6 @@ Include either the alpha or beta phase banner from the `app/views/includes/` fol
 
 ### How to include a Beta banner
 
-    {% include "includes/phase_banner_beta.html" %}
+    {% include "patterns/header/includes/phase_banner_beta.html" %}
 
 
