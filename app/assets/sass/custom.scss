@@ -31,6 +31,25 @@ iframe {
     transform-origin: 0 0;
 }
 
+.scale {
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    // all size values after this is x2 because of the scale
+    width: 200%;
+    border: 2px solid $border-colour;
+    padding: 20px;
+    @include box-sizing(border-box);
+}
+
 .height-100{
     height: 100px
 }
@@ -39,6 +58,9 @@ iframe {
 }
 .height-200{
     height: 200px
+}
+.height-250{
+    height: 250px
 }
 .height-300{
     height: 300px
