@@ -1,30 +1,13 @@
-{% extends "layout-template-blank.html" %}
+{% extends "govuk_template-empty.html" %}
 
 {% block page_title %}
-  500
+  500 page
 {% endblock %}
+
 
 {% block content %}
-
-<main id="content" role="main">
-  {% include "patterns/header/includes/phase_banner_beta.html" %}
-  {% include "patterns/header/includes/hmrc_logo_banner.html" %}
-  {% include "patterns/header/includes/welsh_toggle.html" %}
-  <div class="grid-row">
-    <div class="column-two-thirds">
-
-      <h1 class="heading-large">We are experiencing technical problems</h1>
-
-      <p>Something has gone wrong with this service. It wasn't your fault.</p>
-
-      <p>Please try again in a few moments.</p>
-
-    </div>
-
-  </div>
-  <!--{% include "includes/footer_report_problem.html" %}-->
-</main>
-
+{% include "pages/500-pages/patterns/500.html" %}
 {% endblock %}
+
 
 

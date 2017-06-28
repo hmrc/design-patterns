@@ -7,7 +7,7 @@
     overflow: hidden;
 
     @include box-sizing(border-box);
-    border: 1px solid $border-colour;
+    border: 1px solid red;
     padding: 10px;
     margin: $gutter-half 0 0 0;
     margin-bottom: em(20, 16);
