@@ -1,33 +1,11 @@
-{% extends "layout.html" %}
+{% extends "govuk_template-empty.html" %}
 
 {% block page_title %}
   Service unavailable
 {% endblock %}
 
 {% block content %}
-
-<main id="content" role="main">
-  {% include "patterns/header/includes/phase_banner_beta.html" %}
-  {% include "patterns/header/includes/hmrc_logo_banner.html" %}
-  {% include "patterns/header/includes/welsh_toggle.html" %}
-  <div class="grid-row">
-    <div class="column-two-thirds">
-
-      <h1 class="heading-large">Service unavailable</h1>
-
-      <p>You will be able to use the service at 9am on Monday 29 May 2017.</p>
-
-      <p>Contact us if you have any questions.</p>
-
-      <p>Telephone: 03000 555 995</p>
-
-      <p>Opening times: 8:30am to 4:30pm, Monday to Friday</p>
-
-    </div>
-
-  </div>
-</main>
-
+{% include "pages/shutter-pages/patterns/ei-notyet.html" %}
 {% endblock %}
 
 
