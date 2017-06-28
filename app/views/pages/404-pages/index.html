@@ -52,18 +52,22 @@
         within a GOV.UK domain or other domain that we control. 404 errors should be logged and fixed as soon as possible.</p>
       <p>In this situation, we can tell users that we are aware of the problem and are working to resolve it. </p>
       <p><strong>Example 404 page telling users that we know about the problem</strong></p>
-      <div class="wrap height-425">
-        <iframe src="/pages/404-pages/404-broken-link" frameborder="0"></iframe>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/404-pages/patterns/404-broken-link.html" %}
+        </div>
       </div>
-      <p><a href="/pages/404-pages/404-broken-link">View this page in a browser</a></p>
+      <p><a href="/pages/404-pages/404-broken-link" target="_blank">View this page in a browser</a></p>
       <p>If the result of a broken link is that a user can not complete the transaction and if the service they are using has an alternative
         channel that they can use. Users should be signposted to this channel to complete their transaction.</p>
       
       <p><strong>Example: 404 page with an alternative route</strong></p>
-      <div class="wrap height-425">
-        <iframe src="/pages/404-pages/404-broken-link-alternative-route" frameborder="0"></iframe>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/404-pages/patterns/404-broken-link-alternative-route.html" %}
+        </div>
       </div>
-      <p><a href="/pages/404-pages/404-broken-link-alternative-route">View this page in a browser</a></p>
+      <p><a href="/pages/404-pages/404-broken-link-alternative-route" target="_blank">View this page in a browser</a></p>
       
       <h3 class="heading-medium" id="moved-pages">Moved pages</h3>
       <p>Whenever a page is moved or removed, a 301 redirect should be implemented to ensure that bookmarks or external links are
@@ -88,27 +92,35 @@
       </ul>
       
       <p><strong>Example: 404 page when the user has made a mistake</strong></p>
-      <div class="wrap height-425">
-
-        <iframe src="/pages/404-pages/404-mistake" frameborder="0"></iframe>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/404-pages/patterns/404-mistake.html" %}
+        </div>
       </div>
-      <p><a href="/pages/404-pages/404-mistake">View this page in a browser</a></p>
+
+      <p><a href="/pages/404-pages/404-mistake" target="_blank">View this page in a browser</a></p>
       
       <p><strong>Example: 404 page when the user has made a mistake, and there is an alternative channel that they can use</strong></p>
-      <div class="wrap height-425">
-        <iframe src="/pages/404-pages/404-mistake-support" frameborder="0"></iframe>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/404-pages/patterns/404-mistake-support.html" %}
+        </div>
       </div>
-      <p><a href="/pages/404-pages/404-mistake-support">View this page in a browser</a></p>
+
+      <p><a href="/pages/404-pages/404-mistake-support" target="_blank">View this page in a browser</a></p>
       
       <p>In the situation where a single user continually makes the same error either through copying and pasting or typing the link
         incorrectly. We can intercept these repeated attempts and provide more detailed help such as providing an alternative channel
         if one is available. In this situation, we may want to withhold this option initially so that users can self-help through
         a digital channel rather than diverting them to less efficient channels.</p>
       <p><strong>Example: 404 page when the user has repeatedly tried to access the same URL</strong></p>
-      <div class="wrap height-425">
-        <iframe src="/pages/404-pages/404-intelligent" frameborder="0"></iframe>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/404-pages/patterns/404-intelligent.html" %}
+        </div>
       </div>
-      <p><a href="/pages/404-pages/404-intelligent">View this page in a browser</a></p>
+
+      <p><a href="/pages/404-pages/404-intelligent" target="_blank">View this page in a browser</a></p>
 
     </div>
 
