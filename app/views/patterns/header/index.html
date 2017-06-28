@@ -33,36 +33,20 @@
       <h3 class="heading-small">Header without the HMRC logo</h3>
       <div class="scale-wrapper">
           <div class="scale">
-            <!--GOV.UK header-->
-            {% include "patterns/header/includes/govuk_header.html" %}
-            <!--Content wrapper-->
-            <main id="content" role="main">
-            <!--Phase banner-->
-            {% include "patterns/header/includes/phase_banner_beta.html" %}
-            <!--Welsh toggle-->
-            {% include "patterns/header/includes/welsh_toggle.html" %}
-            </main>
+            {% include "patterns/header/patterns/header-without-hmrc-logo.html" %}
           </div>
       </div>
+      <p><a href="header-without-hmrc-logo" target="_blank">View in a new window</a></p>
       <p>This is essentailly just the GOV.UK header biut it's included here for completness.</p>
       <hr>
 
       <h3 class="heading-small">Header signed out</h3>
       <div class="scale-wrapper">
           <div class="scale">
-            <!--GOV.UK header-->
-            {% include "patterns/header/includes/govuk_header.html" %}
-            <!--Content wrapper-->
-            <main id="content" role="main">
-            <!--Phase banner-->
-            {% include "patterns/header/includes/phase_banner_beta.html" %}
-            <!--HMRC logo banner-->
-            {% include "patterns/header/includes/hmrc_logo_banner.html" %}
-            <!--Welsh toggle-->
-            {% include "patterns/header/includes/welsh_toggle.html" %}
-            </main>
+            {% include "patterns/header/patterns/header-signed-out.html" %}
           </div>
       </div>
+      <p><a href="header-signed-out" target="_blank">View in a new window</a></p>
       <p>Should be used for services when there is a need to identify the service as an HMRC service.</p>
       <p>This version of the header should contain:</p>
       <ul class="list list-bullet">
@@ -76,19 +60,10 @@
       <h3 class="heading-small">Header signed in </h3>
       <div class="scale-wrapper">
           <div class="scale">
-            <!--GOV.UK header-->
-            {% include "patterns/header/includes/govuk_header.html" %}
-            <!--Content wrapper-->
-            <main id="content" role="main">
-            <!--Phase banner-->
-            {% include "patterns/header/includes/phase_banner_beta.html" %}
-            <!--HMRC logo banner with signed in content-->
-            {% include "patterns/header/includes/hmrc_logo_banner_signed_in.html" %}
-            <!--Welsh toggle-->
-            {% include "patterns/header/includes/welsh_toggle.html" %}
-            </main>
+            {% include "patterns/header/patterns/header-signed-in.html" %}
           </div>
       </div>
+      <p><a href="header-signed-in" target="_blank">View in a new window</a></p>
 
       <p>Should be used for services when there is a need to identify the service as an HMRC service and when users can have a signed in state.</p>
       <p>This version of the header should contain:</p>
