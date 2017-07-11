@@ -8,8 +8,6 @@ If you are working on a pattern for an HMRC service and it's not covered in the 
 ## Hosting
 This repo is published to https://hmrc-design-patterns.herokuapp.com/
 
-Patterns are documented at http://hmrc-design-language-prototype.herokuapp.com/design-patterns/patterns/
-
 ## Contributing
 
 To follow
