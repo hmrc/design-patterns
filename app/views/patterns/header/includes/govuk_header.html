@@ -1,0 +1,15 @@
+<header role="banner" id="global-header" class="with-proposition">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="{{ homepage_url|default('https://www.gov.uk') }}" title="{{ logo_link_title|default('Go to the GOV.UK homepage') }}"
+          id="logo" class="content">
+                        <img src="{{ asset_path }}images/gov.uk_logotype_crown_invert_trans.png?0.19.2" width="36" height="32" alt="">            {{ global_header_text|default('GOV.UK') }}
+                      </a>
+      </div>
+
+    </div>
+    {% include "patterns/header/includes/propositional_navigation-blank.html" %}
+  </div>
+</header>
+<div id="global-header-bar"></div>

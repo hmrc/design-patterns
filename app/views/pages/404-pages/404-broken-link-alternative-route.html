@@ -1,37 +1,11 @@
-{% extends "layout-template-blank.html" %}
+{% extends "govuk_template-empty.html" %}
 
 {% block page_title %}
   404
 {% endblock %}
 
 {% block content %}
-
-<main id="content" role="main">
-  <div class="service-info" style="border-top: 0px;">
-    <div class="logo">
-      <span class="organisation-logo organisation-logo-medium">HM Revenue &amp; Customs</span>
-    </div>
-  </div>
-  <div class="grid-row">
-    <div class="column-two-thirds">
-
-      <h1 class="heading-large">This page cannot be found</h1>
-
-      <p>Everything you have done up until now has been saved.</p>
-      
-      <p>The link you clicked on the previous page is broken. This has been reported to the people who manage this service and will be fixed as soon as possible.</p>
-
-      <p>If you'd like to continue your transaction offline you can contact us on Telephone: 03000 555 995 </p>
-      <!--Should we be providing a refernece number of users so that they can pick up the journey at a later date?-->
-      <p>Opening times: 8:30am to 4:30pm, Monday to Friday</p>
-
-      <p><a href="#">Go back to the previous page.</a></p>
-
-    </div>
-
-  </div>
-</main>
-
+  {% include "pages/404-pages/patterns/404-broken-link-alternative-route.html" %}
 {% endblock %}
 
 

@@ -1,0 +1,41 @@
+{% extends "layout-template.html" %}
+
+{% block page_title %} HMRC page template {% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      {% include "includes/back.html" %}
+
+      <h1 class="heading-xlarge">HMRC Page template</h1>
+
+      <div class="alert alert--info">
+        <p class="alert__message">These patterns are work in progress.</p>
+        <p class="alert__message">View the todo list for this pattern on <a href="https://github.com/hmrc/design-language-documentation/issues/">GitHub</a>.</p>
+        <!--@todo add a link to the github issue for this-->
+      </div>
+
+      <p class="lede">The standard HMRC page template is provided to all service by the Template as a Service (TaaS).</p>
+
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/page-template/patterns/template-signed-out.html" %}
+        </div>
+      </div>
+      <p><a href="/pages/page-template/template-signed-out" target="_blank">View in a browser</a></p>
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}

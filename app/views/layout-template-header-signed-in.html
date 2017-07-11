@@ -1,4 +1,4 @@
-{% extends "govuk_template.html" %}
+{% extends "govuk_template-header.html" %}
 
 {% block head %}
   {% include "includes/head.html" %}
@@ -9,12 +9,14 @@
 {% endblock %}
 
 {% block proposition_header %}
-  {% include "includes/propositional_navigation3.html" %}
+  {% include "includes/propositional_navigation_signed_in.html" %}
 {% endblock %}
 
 {% block header_class %}
   with-proposition
 {% endblock %}
+
+<p>hello</p>
 
 {% block body_end %}
   {% include "includes/scripts.html" %}

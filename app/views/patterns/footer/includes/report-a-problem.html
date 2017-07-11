@@ -1,0 +1,47 @@
+<main id="content" role="main">
+
+  <div class="report-error">
+    <a class="report-error__toggle js-visible" id="get-help-action" href="#error-feedback-form">Is there anything wrong with this page?</a>
+    <div class="report-error__content js-hidden">
+
+      <h2>Get help using this service</h2>
+      <p>Don't include any personal or financial information. For example, your National Insurance or credit card numbers.</p>
+
+      <form action="/contact/problem_reports" method="POST" id="error-feedback-form" class="form--feedback" novalidate="novalidate">
+
+        <input type="hidden" name="csrfToken" value="e139a76944df994d3eb880158a159bc1ae90fc8d-1498150261862-c63cb7e4c826b2d09d369c6b">
+
+        <fieldset>
+          <legend class="visuallyhidden">Get help using this service</legend>
+          <div class="form-group-compound">
+            <label for="report-name" class="form-label">Name</label>
+            <input id="report-name" maxlength="70" class="input--fullwidth form-control" name="report-name" type="text" data-rule-letterswithbasicpunc="true"
+              data-rule-required="true" data-msg-required="Please provide your name." aria-required="true">
+          </div>
+          <div class="form-group-compound">
+            <label for="report-email" class="form-label">Email</label>
+            <input id="report-email" maxlength="255" class="input--fullwidth form-control" name="report-email" type="email" data-rule-required="true"
+              data-rule-email="true" data-msg-required="Please provide your email address." aria-required="true">
+          </div>
+          <div class="form-group-compound">
+            <label for="report-action" class="form-label">What were you doing?</label>
+            <input id="report-action" maxlength="1000" class="input--fullwidth form-control" name="report-action" type="text" data-rule-required="true"
+              data-msg-required="Please enter details of what you were doing." aria-required="true">
+          </div>
+          <div class="form-group-compound">
+            <label for="report-error" class="form-label">What do you need help with?</label>
+            <input id="report-error" maxlength="1000" class="input--fullwidth form-control" name="report-error" type="text" data-rule-required="true"
+              data-msg-required="Please enter details of what went wrong." aria-required="true">
+          </div>
+          <input type="hidden" name="isJavascript" value="true">
+          <input type="hidden" name="referrer" value="">
+          <div class="form-field">
+            <button id="report-submit" class="button" type="submit" data-journey-click="page:Click:Get help with this page Submit">Send</button>
+          </div>
+        </fieldset>
+      </form>
+
+    </div>
+  </div>
+
+</main>

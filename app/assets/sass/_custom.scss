@@ -1,0 +1,91 @@
+// Sets the size and position of iframes for screens
+.wrap {
+  width: 646px;
+  // height: 410px;
+  padding: 0;
+  overflow: hidden;
+
+  @include box-sizing(border-box);
+  border: 1px solid red;
+  padding: 10px;
+  margin: $gutter-half 0 0 0;
+  margin-bottom: em(20, 16);
+}
+
+iframe {
+  width: 1280px;
+  height: 786px;
+  border: 0;
+
+  -ms-transform: scale(0.49);
+  -moz-transform: scale(0.49);
+  -o-transform: scale(0.49);
+  -webkit-transform: scale(0.49);
+  transform: scale(0.49);
+
+  -ms-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.scale {
+  -ms-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+
+  -ms-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  // all size values after this is x2 because of the scale
+  width: 200%;
+  border: 2px solid $border-colour;
+  padding: 20px;
+  @include box-sizing(border-box);
+}
+
+.scale-wrapper {
+  margin-bottom: em(20, 16);
+  overflow: hidden;
+}
+
+.height-100 {
+  height: 100px
+}
+
+.height-150 {
+  height: 150px
+}
+
+.height-200 {
+  height: 200px
+}
+
+.height-250 {
+  height: 250px
+}
+
+.height-300 {
+  height: 300px
+}
+
+.height-400 {
+  height: 400px
+}
+
+.height-425 {
+  height: 425px
+}
+
+.height-450 {
+  height: 450px
+}
+
+.height-500 {
+  height: 500px
+}
