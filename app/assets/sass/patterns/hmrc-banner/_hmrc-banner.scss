@@ -1,14 +1,7 @@
-.banner {
-  padding: 10px 0 8px;
-  border-bottom: 1px solid #bfc1c3;
-  overflow: hidden;
-  @media (min-width: 641px) {
-    display: table;
-    width: 100%;
-  }
-}
+@import 'logged-in';
+@import 'lang-select';
 
-.banner__logo {
+.organisation-logo {
   font: 13px/16px Helvetica, Arial;
   display: inline-block;
   padding: 3px 0 3px 30px;
@@ -25,15 +18,15 @@
   }
 }
 
-.banner__logo--stacked {
-  @extend .banner__logo;
+.organisation-logo--stacked {
+  @extend .organisation-logo;
   padding: 25px 0 0 6px;
   background-position: 5px top;
 }
 
-.banner__logo--medium {
-  @extend .banner__logo;
-  padding: 3px 0 3px 38px;
+.organisation-logo--medium {
+  @extend .organisation-logo;
+  padding: 3px 0 3px 30px;
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     background-image: url("../images/icons/crests/hmrc_crest_18px_x2.png");
     background-size: auto 20px;
@@ -47,7 +40,7 @@
     padding: 3px 0 3px 38px;
   }
 
-  &.banner__logo--stacked {
+  &.organisation-logo--stacked {
     @media all and (-webkit-min-device-pixel-ratio: 2) {
       padding: 25px 0 0 6px;
     }
@@ -60,27 +53,23 @@
   }
 }
 
-.banner__logged-in-status {
-  padding: 10px 0 0 0;
-  float: right;
+.hmrc-banner {
+  padding: 10px 0 8px;
+  border-bottom: 1px solid #bfc1c3;
+  overflow: hidden;
   @media (min-width: 641px) {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: right;
-    padding: 0;
-    float: none;
+    display: table;
+    width: 100%;
   }
-  p {
-    color: #6f777b;
-    font: 16px/1.25 nta, Arial, sans-serif;
-    margin: 0;
-  }
-}
 
-.lang-select {
-  padding: 0.65em 0px;
-  text-align: right;
-  li {
-    display: inline-block;
+  .logged-in-status {
+    float: right;
+    @media (min-width: 641px) {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: right;
+      padding: 0;
+      float: none;
+    }
   }
 }
