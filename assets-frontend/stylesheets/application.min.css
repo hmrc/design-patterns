@@ -3432,7 +3432,7 @@ small {
     }
 }
 
-/*h1,
+h1,
 .h1-heading {
     font-family: "nta", Arial, sans-serif;
     font-size: 36px;
@@ -3563,7 +3563,7 @@ h4,
 
 .heading--underlined {
     border-bottom: solid .26316em #005ea5
-}*/
+}
 
 .pre-heading {
     font-family: "nta", Arial, sans-serif;
