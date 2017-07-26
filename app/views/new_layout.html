@@ -1,0 +1,45 @@
+{% block top_of_page %}{% endblock %}
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lte-ie8" lang="{{ html_lang|default('en') }}"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="{{ html_lang|default('en') }}"><!--<![endif]-->
+<head>
+  <meta charset="utf-8"/>
+  <title>{% block page_title %}GOV.UK - The best place to find government services and information{% endblock %}</title>
+  {% include "includes/new_head.html" %}
+</head>
+
+<body class="{% block body_classes %}{% endblock %}">
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+<div id="skiplink-container">
+  <div>
+    <a href="#content" class="skiplink">{{ skip_link_message|default('Skip to main content') }}</a>
+  </div>
+</div>
+
+<div id="global-cookie-message">
+
+  {% block cookie_message %}{% endblock %}
+
+</div>
+
+{% block new_header %}{% endblock %}
+
+
+{% block content %}{% endblock %}
+
+
+{% block new_footer %}{% endblock %}
+
+
+<div id="global-app-error" class="app-error hidden"></div>
+
+<script src="{{ asset_path }}javascripts/govuk-template.js?0.19.2"></script>
+
+{% block body_end %}{% endblock %}
+
+<script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+</body>
+</html>
