@@ -3452,64 +3452,64 @@ h1,
     }
 }
 
-h2,
-.h2-heading {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    font-weight: 700;
-    margin-top: .42105em !important;
-    margin-bottom: .21053em
-}
+/*h2,*/
+/*.h2-heading {*/
+    /*font-family: "nta", Arial, sans-serif;*/
+    /*font-size: 24px;*/
+    /*line-height: 1.25;*/
+    /*font-weight: 400;*/
+    /*text-transform: none;*/
+    /*font-weight: 700;*/
+    /*margin-top: .42105em !important;*/
+    /*margin-bottom: .21053em*/
+/*}*/
 
-@media (max-width: 640px) {
-    h2,
-    .h2-heading {
-        font-size: 20px;
-        line-height: 1.2
-    }
-}
+/*@media (max-width: 640px) {*/
+    /*h2,*/
+    /*.h2-heading {*/
+        /*font-size: 20px;*/
+        /*line-height: 1.2*/
+    /*}*/
+/*}*/
 
-h3,
-.h3-heading {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 19px;
-    line-height: 1.31579;
-    font-weight: 400;
-    text-transform: none;
-    font-weight: 700;
-    margin-top: .42105em;
-    margin-bottom: .21053em
-}
+/*h3,*/
+/*.h3-heading {*/
+    /*font-family: "nta", Arial, sans-serif;*/
+    /*font-size: 19px;*/
+    /*line-height: 1.31579;*/
+    /*font-weight: 400;*/
+    /*text-transform: none;*/
+    /*font-weight: 700;*/
+    /*margin-top: .42105em;*/
+    /*margin-bottom: .21053em*/
+/*}*/
 
-@media (max-width: 640px) {
-    h3,
-    .h3-heading {
-        font-size: 16px;
-        line-height: 1.25
-    }
-}
+/*@media (max-width: 640px) {*/
+    /*h3,*/
+    /*.h3-heading {*/
+        /*font-size: 16px;*/
+        /*line-height: 1.25*/
+    /*}*/
+/*}*/
 
-h4,
-.h4-heading {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 19px;
-    line-height: 1.31579;
-    font-weight: 400;
-    text-transform: none;
-    margin-top: .42105em;
-    margin-bottom: .21053em
-}
+/*h4,*/
+/*.h4-heading {*/
+    /*font-family: "nta", Arial, sans-serif;*/
+    /*font-size: 19px;*/
+    /*line-height: 1.31579;*/
+    /*font-weight: 400;*/
+    /*text-transform: none;*/
+    /*margin-top: .42105em;*/
+    /*margin-bottom: .21053em*/
+/*}*/
 
-@media (max-width: 640px) {
-    h4,
-    .h4-heading {
-        font-size: 16px;
-        line-height: 1.25
-    }
-}
+/*@media (max-width: 640px) {*/
+    /*h4,*/
+    /*.h4-heading {*/
+        /*font-size: 16px;*/
+        /*line-height: 1.25*/
+    /*}*/
+/*}*/
 
 .heading-48 {
     font-family: "nta", Arial, sans-serif;
