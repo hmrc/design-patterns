@@ -1,10 +1,12 @@
-{% extends "govuk_template-empty.html" %}
+{% extends "blank_layout.html" %}
 
-{% block page_title %}
-  Header signed in
-{% endblock %}
-
+{% block page_title %}Header pattern{% endblock %}
 
 {% block content %}
-{% include "patterns/header/patterns/header-signed-in.html" %}
+{% import "macro/header.html" as pattern %}
+{{ pattern.header(serviceName='HMRC Design patterns', proposition=true) }}
+<main id="content">
+  {% import "macro/banner.html" as pattern %}
+  {{ pattern.banner(hmrc=true, beta=true, signedIn=true) }}
+</main>
 {% endblock %}

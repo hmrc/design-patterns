@@ -1,18 +1,43 @@
-{% extends "layout-template.html" %}
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lte-ie8" lang="{{ html_lang|default('en') }}"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="{{ html_lang|default('en') }}"><!--<![endif]-->
+<head>
+  <meta charset="utf-8"/>
+  <title>{% block page_title %}GOV.UK{% endblock %} | GOV.UK - The best place to find government services and information</title>
+  {% include "includes/new_head.html" %}
+</head>
 
-{% block page_title %}
-  HMRC design patterns
+<body class="{% block body_classes %}{% endblock %}">
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+<div id="skiplink-container">
+  <div>
+    <a href="#content" class="skiplink">{{ skip_link_message|default('Skip to main content') }}</a>
+  </div>
+</div>
+
+{% block header %}
+  {% import "macro/header.html" as index %}
+  {{ index.header(serviceName='HMRC Design patterns', proposition=true) }}
 {% endblock %}
 
 {% block content %}
-
 <main id="content" role="main">
+  {% block banner %}
+    {% import "macro/banner.html" as index %}
+    {{ index.banner() }}
+  {% endblock %}
+
   <div class="grid-row">
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">HMRC design patterns</h1>
 
-      <p>Patterns displayed here will be descussed at the HMRC patterns working group (to yet be formed). Once patterns have been agreed by the working group they will be released through HMRC Assets Frontend for service teams to use in their services.</p>
+      <p>Patterns displayed here will be descussed at the HMRC patterns working group (to yet be formed). Once patterns
+        have been agreed by the working group they will be released through HMRC Assets Frontend for service teams to
+        use in their services.</p>
 
       <p>Patterns that are released will have to fulfill these criteria:</p>
 
@@ -26,7 +51,7 @@
       <h2 class="heading-large">Global patterns</h2>
 
       <ul class="list">
-        <li><a href="patterns/header/index">Header</a></li>
+        <li><a href="patterns/header">Header</a></li>
         <li><a href="patterns/footer/index">Footer</a></li>
         <li><a href="patterns/get-help-with-this-page/index">Get help with this page</a></li>
       </ul>
@@ -53,5 +78,18 @@
 </main>
 
 {% endblock %}
+
+{% block footer %}
+  {% import "macro/footer.html" as index %}
+  {{ index.footer(supportLinks=true) }}
+{% endblock %}
+
+{% block scripts %}
+  {% include "includes/scripts.html" %}
+{% endblock %}
+
+<script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+</body>
+</html>
 
 
