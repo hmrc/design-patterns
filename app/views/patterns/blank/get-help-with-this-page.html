@@ -1,11 +1,9 @@
-{% extends "govuk_template-empty.html" %}
+{% extends "blank_layout.html" %}
 
-{% block page_title %}
-Get help with this page
-{% endblock %}
-
+{% block page_title %}Get help with this page pattern{% endblock %}
 
 {% block content %}
+
 <main id="content" role="main">
   <div id="report-error-partial-form" class="report-error__content">
 
@@ -15,7 +13,6 @@ Get help with this page
 
     <form action="/contact/problem_reports_secure" method="POST" id="error-feedback-form" class="form--feedback"
           novalidate="novalidate">
-
 
       <fieldset>
         <legend class="visuallyhidden">Get help using this service</legend>
@@ -56,7 +53,9 @@ Get help with this page
         </div>
       </fieldset>
     </form>
-
   </div>
 </main>
+
 {% endblock %}
+
+

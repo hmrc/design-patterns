@@ -1,8 +1,6 @@
-{% extends "layout-template.html" %}
+{% extends "index.html" %}
 
-{% block page_title %}
-HMRC Footer
-{% endblock %}
+{% block page_title %}Footer pattern{% endblock %}
 
 {% block content %}
 
@@ -59,10 +57,10 @@ HMRC Footer
       <h3 class="heading-small">Footer with utility links</h3>
       <div class="scale-wrapper">
         <div class="scale">
-          {% include "patterns/footer/patterns/footer.html" %}
+          {% include "patterns/blank/footer.html" %}
         </div>
       </div>
-      <p><a href="footer" target="_blank">View in a new window</a></p>
+      <p><a href="blank/footer.html" target="_blank">View in a new window</a></p>
       <p>Should be used on all pages that do not requre a report a problem link.</p>
 
       <hr>
@@ -70,16 +68,15 @@ HMRC Footer
       <h3 class="heading-small">Footer with report a problem</h3>
       <div class="scale-wrapper">
         <div class="scale">
-          {% include "patterns/footer/patterns/footer-with-report-a-problem.html" %}
+          {% include "patterns/blank/footer-with-report-a-problem.html" %}
         </div>
       </div>
-      <p><a href="footer-with-report-a-problem.html" target="_blank">View in a new window</a></p>
+      <p><a href="blank/footer-with-report-a-problem.html" target="_blank">View in a new window</a></p>
 
       <p>Should be used when we want to encorage users to tell us if there is a technical problem with a page.</p>
 
     </div>
   </div>
 </main>
-
 
 {% endblock %}

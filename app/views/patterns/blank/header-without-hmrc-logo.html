@@ -1,12 +1,12 @@
 {% extends "blank_layout.html" %}
 
-{% block page_title %}Header pattern{% endblock %}
+{% block page_title %}Header pattern without HMRC logo{% endblock %}
 
 {% block content %}
-{% import "macro/header.html" as pattern %}
+{% import "../macro/header.html" as pattern %}
 {{ pattern.header(serviceName='HMRC Design patterns', proposition=true) }}
 <main id="content">
-  {% import "macro/banner.html" as pattern %}
+  {% import "../macro/banner.html" as pattern %}
   {{ pattern.banner(beta=true) }}
 </main>
 {% endblock %}

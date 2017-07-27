@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8"/>
   <title>{% block page_title %}GOV.UK{% endblock %} | GOV.UK - The best place to find government services and information</title>
-  {% include "includes/new_head.html" %}
+  {% include "includes/head.html" %}
 </head>
 
 <body class="{% block body_classes %}{% endblock %}">
@@ -19,14 +19,14 @@
 </div>
 
 {% block header %}
-  {% import "macro/header.html" as index %}
+  {% import "patterns/macro/header.html" as index %}
   {{ index.header(serviceName='HMRC Design patterns', proposition=true) }}
 {% endblock %}
 
 {% block content %}
 <main id="content" role="main">
   {% block banner %}
-    {% import "macro/banner.html" as index %}
+    {% import "patterns/macro/banner.html" as index %}
     {{ index.banner() }}
   {% endblock %}
 
@@ -52,8 +52,8 @@
 
       <ul class="list">
         <li><a href="patterns/header">Header</a></li>
-        <li><a href="patterns/footer/index">Footer</a></li>
-        <li><a href="patterns/get-help-with-this-page/index">Get help with this page</a></li>
+        <li><a href="patterns/footer">Footer</a></li>
+        <li><a href="patterns/get-help-with-this-page">Get help with this page</a></li>
       </ul>
 
 
@@ -80,7 +80,7 @@
 {% endblock %}
 
 {% block footer %}
-  {% import "macro/footer.html" as index %}
+  {% import "patterns/macro/footer.html" as index %}
   {{ index.footer(supportLinks=true) }}
 {% endblock %}
 
