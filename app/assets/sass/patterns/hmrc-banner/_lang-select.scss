@@ -1,7 +1,14 @@
 .lang-select {
-  padding: 0.65em 0;
-  text-align: right;
-  li {
-    display: inline-block;
-  }
+  float: right;
+  border-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.lang-select ul {
+  padding: 0.75em 0 0.55em;
+}
+
+.lang-select li {
+  display: inline-block;
+  margin-left: 8px;
 }

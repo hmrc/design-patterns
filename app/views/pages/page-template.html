@@ -1,6 +1,11 @@
-{% extends "layout-template.html" %}
+{% extends "index.html" %}
 
-{% block page_title %} HMRC page template {% endblock %}
+{% block page_title %}HMRC page template{% endblock %}
+
+{% block header %}
+{% import "patterns/macro/header.html" as index %}
+{{ index.header(serviceName='HMRC page template', proposition=true) }}
+{% endblock %}
 
 {% block content %}
 
@@ -22,10 +27,10 @@
 
       <div class="scale-wrapper">
         <div class="scale">
-          {% include "pages/page-template/patterns/template-signed-out.html" %}
+          {% include "pages/blank/page-template.html" %}
         </div>
       </div>
-      <p><a href="/pages/page-template/template-signed-out" target="_blank">View in a browser</a></p>
+      <p><a href="blank/page-template.html" target="_blank">View in a browser</a></p>
 
 
 
@@ -39,3 +44,5 @@
 </main>
 
 {% endblock %}
+
+
