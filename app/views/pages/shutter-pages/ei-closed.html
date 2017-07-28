@@ -1,7 +1,28 @@
-{% extends "govuk_template-empty.html" %}
+{% extends "index.html" %}
 
-{% block page_title %} Service unavailable {% endblock %}
+{% block header %}
+{% import "patterns/macro/header.html" as index %}
+{{ index.header(proposition=true) }}
+{% endblock %}
 
 {% block content %}
-{% include "pages/shutter-pages/patterns/ei-closed.html" %}
+<main id="content" role="main">
+  <!--Main content-->
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Service unavailable</h1>
+
+      <p>You cannot use the online service to submit an employment intermediary report.</p>
+
+      <p>Contact us if you have any questions.</p>
+
+      <p>Telephone: 03000 555 995</p>
+
+      <p>Opening times: 8:30am to 4:30pm, Monday to Friday</p>
+
+    </div>
+
+  </div>
+</main>
 {% endblock %}

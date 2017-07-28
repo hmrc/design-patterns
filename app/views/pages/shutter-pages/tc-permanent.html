@@ -1,11 +1,35 @@
-{% extends "govuk_template-empty.html" %}
+{% extends "index.html" %}
 
-{% block page_title %}
-  Service unavailable
+{% block header %}
+{% import "patterns/macro/header.html" as index %}
+{{ index.header(proposition=true) }}
 {% endblock %}
 
 {% block content %}
-  {% include "pages/shutter-pages/patterns/tc-permanent.html" %}
+<main id="content" role="main">
+  <!--Main content-->
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Service unavailable</h1>
+
+        <p>Tax credits has been replaced by Universal Credit.</p>
+
+        <p><a href="https://www.gov.uk/contact-the-tax-credit-office" data-sso="false">Contact the Tax Credit Office</a> if you need to speak to someone about your tax credits.</p>
+
+        <p>You can:</p>
+
+        <ul class="list-bullet">
+            <li><a href="https://www.gov.uk/universal-credit">find out more about Universal Credit</a></li>
+            <li><a href="https://www.gov.uk/apply-universal-credit">apply for Universal Credit</a></li>
+            <li><a href="https://www.gov.uk/sign-in-universal-credit">sign in to your Universal Credit account</a></li>
+        </ul>
+
+    </div>
+
+  </div>
+</main>
+<!--HMRC footer-->
 {% endblock %}
 
 

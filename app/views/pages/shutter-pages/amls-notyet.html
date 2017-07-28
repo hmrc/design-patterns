@@ -1,11 +1,23 @@
-{% extends "govuk_template-empty.html" %}
+{% extends "index.html" %}
 
-{% block page_title %}
-  Service unavailable
+{% block header %}
+{% import "patterns/macro/header.html" as index %}
+{{ index.header(proposition=true) }}
 {% endblock %}
 
 {% block content %}
-{% include "pages/shutter-pages/patterns/amls-notyet.html" %}
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Service unavailable</h1>
+
+      <p>You will be able to use the service at 9am on Monday 29 May 2017.</p>
+
+    </div>
+
+  </div>
+</main>
 {% endblock %}
 
 

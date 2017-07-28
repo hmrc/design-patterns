@@ -1,15 +1,11 @@
-{% extends "layout.html" %}
+{% extends "index.html" %}
 
-{% block page_title %}
-  Service unavailable
+{% block header %}
+{% import "patterns/macro/header.html" as index %}
+{{ index.header(proposition=true) }}
 {% endblock %}
-
 {% block content %}
-
 <main id="content" role="main">
-  {% include "patterns/header/includes/phase_banner_beta.html" %}
-  {% include "patterns/header/includes/hmrc_logo_banner.html" %}
-  {% include "patterns/header/includes/welsh_toggle.html" %}
   <div class="grid-row">
     <div class="column-two-thirds">
 
@@ -27,7 +23,5 @@
 
   </div>
 </main>
-
 {% endblock %}
-
 
