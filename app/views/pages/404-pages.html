@@ -1,11 +1,13 @@
-{% extends "layout-template.html" %}
+{% extends "index.html" %}
 
-{% block page_title %}
-  404 pages
-{% endblock %} 
+{% block page_title %}HMRC 404 pages{% endblock %}
+
+{% block header %}
+{% import "patterns/macro/header.html" as index %}
+{{ index.header(serviceName='HMRC 404 pages', proposition=true) }}
+{% endblock %}
 
 {% block content %}
-
 <main id="content" role="main">
   <div class="grid-row">
     <div class="column-two-thirds">
@@ -23,7 +25,7 @@
         not there.</p>
       <p>Processes and systems should be put in place to prevent users encountering 404 pages in the first place.</p>
       <!--@todo list a few examples of these things-->
-      
+
       <h2 class="heading-large" id="why-users-see-404-pages">Why users see 404 pages</h2>
       <p>There are three main reasons users encounter a 404 page:</p>
       <ol class="list list-number">
@@ -31,18 +33,18 @@
         <li>they followed an old link or a link that has expired</li>
         <li>they typed or <a href="#copied-links">copied a link</a> incorrectly</li>
       </ol>
-      
+
       <h2 class="heading-large" id="404-page-design">404 page design</h2>
       <p>As with all error messages, we should reassure users that their progress has been saved and then help them to fix the error.</p>
-      
+
       <h2 class="heading-large" id="broken-links-or-moved-pages">Broken links or moved pages</h2>
       <p>There are a few possible reasons why this may happen: </p>
-      
+
       <ul class="list list-bullet">
         <li>if a user clicked a broken link</li>
         <li>if a user bookmarked a page and the page has been moved or removed</li>
       </ul>
-      
+
       <h3 class="heading-medium" id="broken-links-todo-reword-this-paragraph-">Broken links
         <!--@todo reword this paragraph-->
       </h3>
@@ -54,34 +56,34 @@
       <p><strong>Example 404 page telling users that we know about the problem</strong></p>
       <div class="scale-wrapper">
         <div class="scale">
-          {% include "pages/404-pages/patterns/404-broken-link.html" %}
+          {% include "pages/404-pages/404-broken-link.html" %}
         </div>
       </div>
-      <p><a href="/pages/404-pages/404-broken-link" target="_blank">View this page in a browser</a></p>
+      <p><a href="404-pages/404-broken-link.html" target="_blank">View this page in a browser</a></p>
       <p>If the result of a broken link is that a user can not complete the transaction and if the service they are using has an alternative
         channel that they can use. Users should be signposted to this channel to complete their transaction.</p>
-      
+
       <p><strong>Example: 404 page with an alternative route</strong></p>
       <div class="scale-wrapper">
         <div class="scale">
-          {% include "pages/404-pages/patterns/404-broken-link-alternative-route.html" %}
+          {% include "pages/404-pages/404-broken-link-alternative-route.html" %}
         </div>
       </div>
-      <p><a href="/pages/404-pages/404-broken-link-alternative-route" target="_blank">View this page in a browser</a></p>
-      
+      <p><a href="404-pages/404-broken-link-alternative-route.html" target="_blank">View this page in a browser</a></p>
+
       <h3 class="heading-medium" id="moved-pages">Moved pages</h3>
       <p>Whenever a page is moved or removed, a 301 redirect should be implemented to ensure that bookmarks or external links are
         handled in a friendly way.</p>
       <p>If a 301 redirect has not or can not be implemented users will be shown a 404 page. In this case, we would not know the referring
         URL so we can determine that this has been linked to from an external source, outside of our control. In this case, the
         same 404 page should be used as if the user has made a mistake described below.</p>
-      
+
       <h2 class="heading-large" id="copied-links">Copied links</h2>
       <p>When users copy links - either by copying and pasting or retyping a link - there is a higher chance of them making an error
         that they do not notice. In this situation, the content of the 404 page should help them to self-diagnose the issue and
         fix it.</p>
       <p>We can help the user to:</p>
-      
+
       <ul class="list list-bullet">
         <li>check the link is correct</li>
         <li>look out for spaces or other irregularities in the link</li>
@@ -90,25 +92,25 @@
         <li>get help with the problem if the link is likely to be from official correspondence from HMRC such as a printed letter by
           providing an alternative channel if one exists</li>
       </ul>
-      
+
       <p><strong>Example: 404 page when the user has made a mistake</strong></p>
       <div class="scale-wrapper">
         <div class="scale">
-          {% include "pages/404-pages/patterns/404-mistake.html" %}
+          {% include "pages/404-pages/404-mistake.html" %}
         </div>
       </div>
 
-      <p><a href="/pages/404-pages/404-mistake" target="_blank">View this page in a browser</a></p>
-      
+      <p><a href="404-pages/404-mistake.html" target="_blank">View this page in a browser</a></p>
+
       <p><strong>Example: 404 page when the user has made a mistake, and there is an alternative channel that they can use</strong></p>
       <div class="scale-wrapper">
         <div class="scale">
-          {% include "pages/404-pages/patterns/404-mistake-support.html" %}
+          {% include "pages/404-pages/404-mistake-support.html" %}
         </div>
       </div>
 
-      <p><a href="/pages/404-pages/404-mistake-support" target="_blank">View this page in a browser</a></p>
-      
+      <p><a href="404-pages/404-mistake-support.html" target="_blank">View this page in a browser</a></p>
+
       <p>In the situation where a single user continually makes the same error either through copying and pasting or typing the link
         incorrectly. We can intercept these repeated attempts and provide more detailed help such as providing an alternative channel
         if one is available. In this situation, we may want to withhold this option initially so that users can self-help through
@@ -116,11 +118,11 @@
       <p><strong>Example: 404 page when the user has repeatedly tried to access the same URL</strong></p>
       <div class="scale-wrapper">
         <div class="scale">
-          {% include "pages/404-pages/patterns/404-intelligent.html" %}
+          {% include "pages/404-pages/404-intelligent.html" %}
         </div>
       </div>
 
-      <p><a href="/pages/404-pages/404-intelligent" target="_blank">View this page in a browser</a></p>
+      <p><a href="404-pages/404-intelligent.html" target="_blank">View this page in a browser</a></p>
 
     </div>
 
@@ -128,3 +130,5 @@
 </main>
 
 {% endblock %}
+
+

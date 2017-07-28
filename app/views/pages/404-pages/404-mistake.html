@@ -1,11 +1,25 @@
-{% extends "govuk_template-empty.html" %}
+{% extends "index.html" %}
 
-{% block page_title %}
-  404 mistake
+{% block header %}
+{% import "patterns/macro/header.html" as index %}
+{{ index.header(proposition=true) }}
 {% endblock %}
 
 {% block content %}
-  {% include "pages/404-pages/patterns/404-mistake.html" %}
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">This page cannot be found</h1>
+
+      <p>Please check the address is correct</p>
+
+      <p>If you typed the address check the spelling is correct.</p>
+
+      <p>If you copied and pasted the address check that you copied the entire address.</p>
+
+    </div>
+
+  </div>
+</main>
 {% endblock %}
-
-

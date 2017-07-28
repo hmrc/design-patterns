@@ -1,13 +1,18 @@
-{% extends "govuk_template-empty.html" %}
+{% extends "index.html" %}
 
-{% block page_title %}
-  500 page
+{% block header %}
+{% import "patterns/macro/header.html" as index %}
+{{ index.header(proposition=true) }}
 {% endblock %}
-
 
 {% block content %}
-{% include "pages/500-pages/patterns/500.html" %}
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large">We are experiencing technical problems</h1>
+      <p>Something has gone wrong with this service. It wasn't your fault.</p>
+      <p>Please try again in a few moments.</p>
+    </div>
+  </div>
+</main>
 {% endblock %}
-
-
-
