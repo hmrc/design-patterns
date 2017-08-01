@@ -1,0 +1,6 @@
+{% extends "govuk-template-blank.html" %}
+{% block h1 %}Footer{% endblock %}
+{% block content %}
+{% import "../macro/footer.html" as pattern %}
+{{ pattern.footer(supportLinks=true) }}
+{% endblock %}

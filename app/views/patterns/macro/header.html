@@ -1,0 +1,42 @@
+{% macro header(
+serviceName='Service name',
+proposition,
+navigation,
+cookie
+) %}
+
+{% if cookie %}
+<div id="global-cookie-message" style="display: block;">
+  <p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
+</div>
+{% endif %}
+<header role="banner" id="global-header" class="with-proposition">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="{{ homepage_url|default('https://www.gov.uk') }}" title="{{ logo_link_title|default('Go to the GOV.UK homepage') }}"
+           id="logo" class="content">
+          <img src="{{ asset_path }}images/gov.uk_logotype_crown_invert_trans.png?0.19.2" width="36" height="32" alt="">            {{ global_header_text|default('GOV.UK') }}
+        </a>
+      </div>
+    </div>
+    {% if proposition %}
+    <div class="header-proposition">
+      <div class="content">
+        <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+        <nav id="proposition-menu">
+          <a href="/" id="proposition-name">{{serviceName}}</a>
+          {% if navigation %}
+          <ul id="proposition-links">
+            <li><a href="url-to-page-1" class="active">Navigation item #1</a></li>
+            <li><a href="url-to-page-2">Navigation item #2</a></li>
+          </ul>
+          {% endif %}
+        </nav>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</header>
+<div id="global-header-bar"></div>
+{% endmacro %}

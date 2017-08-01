@@ -1,0 +1,10 @@
+{% extends "govuk-template-blank.html" %}
+{% block h1 %}Header signed out{% endblock %}
+{% block content %}
+{% import "../macro/header.html" as pattern %}
+{{ pattern.header(proposition=true) }}
+<main id="content">
+  {% import "../macro/banner.html" as pattern %}
+  {{ pattern.banner(hmrc=true, beta=true) }}
+</main>
+{% endblock %}

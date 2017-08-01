@@ -1,0 +1,215 @@
+{% extends "govuk-template.html" %}
+
+{% block header %}
+  {% import "patterns/macro/header.html" as index %}
+  {{ index.header(serviceName='HMRC design patterns', proposition=true) }}
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      {% include "includes/back.html" %}
+
+      <h1 class="heading-xlarge">{% block h1 %}Shutter pages{% endblock %}</h1>
+
+      <div class="alert alert--info">
+        <p class="alert__message">This patterns is work in progress.</p>
+        <p class="alert__message">View the todo list for this pattern on <a href="https://github.com/hmrc/design-language-documentation/issues/103">GitHub</a>.</p>
+      </div>
+
+      <p class="lede">A shutter page is a page that is shown when a service has been switched off on purpose. These are different to <a href="/pages/404-pages/index">page not found</a> and <a href="/pages/500-pages/index">technical difficulties</a> pages.</p>
+
+      <h2 class="heading-large" id="what-to-include-in-your-service">Shutter page design</h2>
+
+      <p>Your service should have a general page that does not include the day, date and time so a service can be shuttered quickly, before the content can be updated. But the content should be updated as fast as possible.</p>
+      <p>The page should:</p>
+
+      <ul class="list list-bullet">
+        <li>use the standard <a href="/pages/page-template/index">page template</a></li>
+        <li>include the phase banner relevent to the service</li>
+        <li>have "Service unavailable" as the page title and H1</li>
+        <li>be clear and concise</li>
+        <li>not have breadcrumbs</li>
+        <li>not use vague terms like maintenance or jargon</li>
+        <li>not use red text to warn people</li>
+      </ul>
+
+      <p>Wherever possible, a shutter page should include:</p>
+
+      <ul class="list list-bullet">
+        <li>the day, date and time the service is going to be back</li>
+        <li>other ways for someone to do what they need to do, if there are any</li>
+      </ul>
+
+      <h2 class="heading-large" id="shutter-page-examples">Shutter page examples</h2>
+      <ul class="list list-bullet">
+        <li><a href="#general-page">General page</a></li>
+        <li><a href="#day-date-and-time">Day, date and time</a></li>
+        <li><a href="#end-of-reporting-period">End of reporting period</a></li>
+        <li><a href="#closed-forever">Closed forever</a></li>
+        <li><a href="#not-available-yet">Not available yet</a></li>
+      </ul>
+
+      <h2 class="heading-large" id="general-page">General page</h2>
+      <p>This is a placeholder that can be used quickly if there is no time to change the content.</p>
+
+      <h3 class="heading-small" id="example-1">Example service that has a contact page on GOV.UK</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/tc-general.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/tc-general.html" target="_blank">View in a browser</a></p>
+
+
+      <h3 class="heading-small" id="example-2">Example service that has a contact number, but no contact page</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/ei-general.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/ei-general.html" target="_blank">View in a browser</a></p>
+
+
+      <h3 class="heading-small" id="example-3">Example service that has no offline support</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/amls-general.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/amls-general.html" target="_blank">View in a browser</a></p>
+
+
+      <h2 class="heading-large" id="day-date-and-time">Day, date and time</h2>
+      <p>This includes the helpful day, date and time information when a service will be available.</p>
+
+      <h3 class="heading-small" id="example-1">Example service that has a contact page on GOV.UK</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/tc-shutter.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/tc-shutter.html" target="_blank">View in a browser</a></p>
+
+
+      <h3 class="heading-small" id="example-2">Example service that has a contact number, but no contact page</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/ei-shutter.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/ei-shutter.html" target="_blank">View in a browser</a></p>
+
+
+      <h3 class="heading-small" id="example-3">Example service that has no offline support</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/amls-shutter.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/amls-shutter.html" target="_blank">View in a browser</a></p>
+
+
+      <h2 class="heading-large" id="end-of-reporting-period">End of reporting period</h2>
+      <p>This is for a service, like tax credit renewals, that is only open for part of the year.</p>
+
+      <h3 class="heading-small" id="example-1">Example service that has a contact page on GOV.UK</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/tc-closed.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/tc-closed.html" target="_blank">View in a browser</a></p>
+
+
+      <h3 class="heading-small" id="example-2">Example service that has a contact number, but no contact page</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/ei-closed.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/ei-closed.html" target="_blank">View in a browser</a></p>
+
+
+      <h3 class="heading-small" id="example-3">Example service that has no offline support</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/amls-closed.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/amls-closed.html" target="_blank">View in a browser</a></p>
+
+
+      <h2 class="heading-large" id="closed-forever">Closed forever</h2>
+      <p>You should try and provide information about what has replaced it or what people need to do if they have outstanding questions.</p>
+
+      <h3 class="heading-small" id="example-1">Example service that has a contact page on GOV.UK</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/tc-permanent.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/tc-permanent.html" target="_blank">View in a browser</a></p>
+
+
+      <h3 class="heading-small" id="example-2">Example service that has a contact number, but no contact page</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/ei-permanent.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/ei-permanent.html" target="_blank">View in a browser</a></p>
+
+
+      <h3 class="heading-small" id="example-3">Example service that has no offline support</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/amls-permanent.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/amls-permanent.html" target="_blank">View in a browser</a></p>
+
+
+      <h2 class="heading-large" id="not-available-yet">Not available yet</h2>
+      <p>This is for a service that has not opened yet. This could be for tax credit renewals, which opens in April, or for a service
+        that has been published but is not open until a specific day. These pages may be the same as the day, date and time pages.</p>
+
+      <h3 class="heading-small" id="example-1">Example service that has a contact page on GOV.UK</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/tc-notyet.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/tc-notyet.html" target="_blank">View in a browser</a></p>
+
+
+      <h3 class="heading-small" id="example-2">Example service that has a contact number, but no contact page</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/ei-notyet.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/ei-notyet.html" target="_blank">View in a browser</a></p>
+
+      <h3 class="heading-small" id="example-3">Example service that has no offline support</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/shutter-pages/amls-notyet.html" %}
+        </div>
+      </div>
+      <p><a href="shutter-pages/amls-notyet.html" target="_blank">View in a browser</a></p>
+
+
+
+
+    </div>
+
+  </div>
+</main>
+
+
+{% endblock %}
+
+

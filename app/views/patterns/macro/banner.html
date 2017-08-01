@@ -1,0 +1,36 @@
+{% macro banner(beta, alpha, hmrc, signedIn) %}
+  {% if beta %}
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  {% endif %}
+{% if alpha %}
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">ALPHA</strong>
+    <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+{% endif %}
+{% if hmrc %}
+<div class="hmrc-banner" role="banner">
+  <div class="organisation-logo organisation-logo--medium">
+    <p>HM Revenue &amp; Customs</p>
+  </div>
+  {% if signedIn %}
+  <div class="logged-in-status mobile-hidden">
+    <p>Firstname Lastname, you last signed in 12:34pm, Monday 5 June 2017</p>
+  </div>
+  {% endif %}
+</div>
+<div class="lang-select">
+  <ul>
+    <li><a href="#">English</a></li>
+    <li><a href="#">Cymraeg</a></li>
+  </ul>
+</div>
+{% endif %}
+{% endmacro %}

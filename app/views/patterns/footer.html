@@ -1,0 +1,80 @@
+{% extends "govuk-template.html" %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      {% include "includes/back.html" %}
+
+      <h1 class="heading-xlarge">{% block h1 %}HMRC Footer{% endblock %}</h1>
+
+      <div class="alert alert--info">
+        <p class="alert__message">These patterns are work in progress.</p>
+        <p class="alert__message">View the todo list for this pattern on <a href="https://github.com/hmrc/design-language-documentation/issues/5">GitHub</a>.</p>
+      </div>
+
+      <p class="lede">The Footer used on all HMRC services should be the standard <a href="https://www.gov.uk/service-manual/design/add-the-govuk-header-and-footer">GOV.UK footer, with the addition of HMRC specific links</a>.
+      </p>
+
+      <h2 class="heading-large">Footer design</h2>
+
+      <p>The standard footer should be used on all services.</p>
+
+      <p>The report a problem link 'Is there anything wrong with this page?' is intended to be used by users to tell HMRC if
+        there is something technically wrong with the page. However the design of this component is misleading and attracts
+        contact from users who have a problem using the service.</p>
+
+      <p>The following utility links should be included:</p>
+
+      <ul class="list list-bullet">
+        <li>cookies</li>
+        <li>privacy policy</li>
+        <li>terms and conditions</li>
+        <li>help using GOV.UK</li>
+      </ul>
+
+      <h4 class="heading-small">Cookies</h4>
+      <p>Point to HMRC's cookie page <a href="https://www.tax.service.gov.uk/help/cookies">https://www.tax.service.gov.uk/help/cookies</a>.
+      </p>
+
+      <h4 class="heading-small">Privacy policy</h4>
+      <p>Point to HMRC's privacy policy <a href="https://www.tax.service.gov.uk/help/privacy">https://www.tax.service.gov.uk/help/privacy</a>.
+      </p>
+
+      <h4 class="heading-small">Terms and conditions</h4>
+      <p>Point to HMRC's terms and conditions <a href="https://www.tax.service.gov.uk/help/terms-and-conditions">https://www.tax.service.gov.uk/help/terms-and-conditions</a>.
+      </p>
+
+      <h4 class="heading-small">Help using GOV.UK</h4>
+      <p>Point to HMRC's help using GOV.UK <a href="https://www.gov.uk/help">https://www.gov.uk/help</a>.</p>
+
+      <h2 class="heading-large">Examples</h2>
+
+      <h3 class="heading-small">Footer with utility links</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "patterns/blank/footer.html" %}
+        </div>
+      </div>
+      <p><a href="blank/footer.html" target="_blank">View in a new window</a></p>
+      <p>Should be used on all pages that do not requre a report a problem link.</p>
+
+      <hr>
+
+      <h3 class="heading-small">Footer with report a problem</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "patterns/blank/footer-with-report-a-problem.html" %}
+        </div>
+      </div>
+      <p><a href="blank/footer-with-report-a-problem.html" target="_blank">View in a new window</a></p>
+
+      <p>Should be used when we want to encorage users to tell us if there is a technical problem with a page.</p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

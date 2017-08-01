@@ -3,7 +3,7 @@ var router = express.Router()
 
 // Route index page
 router.get('/', function (req, res) {
-  res.render('index')
+  res.render('govuk-template.html')
 })
 
 // add your routes here

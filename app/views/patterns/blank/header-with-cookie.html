@@ -1,0 +1,10 @@
+{% extends "govuk-template-blank.html" %}
+{% block h1 %}Header with cookie{% endblock %}
+{% block content %}
+{% import "../macro/header.html" as pattern %}
+{{ pattern.header(proposition=true, cookie=true) }}
+<main id="content">
+  {% import "../macro/banner.html" as pattern %}
+  {{ pattern.banner(alpha=true) }}
+</main>
+{% endblock %}

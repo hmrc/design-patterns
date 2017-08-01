@@ -1,0 +1,73 @@
+{% extends "govuk-template.html" %}
+
+{% block page_title %}HMRC 500 pages{% endblock %}
+
+{% block header %}
+{% import "patterns/macro/header.html" as index %}
+{{ index.header(serviceName='HMRC 500 pages', proposition=true) }}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      {% include "includes/back.html" %}
+
+      <h1 class="heading-xlarge">500 pages</h1>
+
+      <div class="alert alert--info">
+        <p class="alert__message">These patterns are work in progress.</p>
+        <p class="alert__message">View the todo list for this pattern on <a href="https://github.com/hmrc/design-language-documentation/issues/105">GitHub</a>.</p>
+      </div>
+
+      <p class="lede">500 pages are used to tell users that we [HMRC] have a problem that was not their fault.</p>
+      <p>They cover a range of situations when something has gone wrong with the server.</p>
+      <p>500 errors should only be displayed to users for a short time. The standard approach within HMRC is to <a href="http://hmrc-design-language-prototype.herokuapp.com/design-patterns/patterns/pages/shutter_pages/">shutter</a>        a service, if there is going to be a disruption to users for an extended period of time.</p>
+      <p>500 errors should be logged by services and fixed as a matter of priority.</p>
+      <p>There are a number of <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_Server_error">standard pages</a>        that fall into the category of 500 pages. We do not need different error pages to cover all of these situations.</p>
+      <h2 class="heading-large" id="why-users-see-500-pages">Why users see 500 pages</h2>
+      <p>For the purposes of HMRC services there are 3 scenarios when we would need to show users a 500 page:</p>
+
+      <ul class="list list-bullet">
+        <li>500 Internal Server Error</li>
+        <li>503 Service Unavailable</li>
+        <li>504 Gateway Timeout</li>
+      </ul>
+      <h2 class="heading-large" id="500-page-design">500 page design</h2>
+      <p>When displaying a 500 page we should:</p>
+
+      <ul class="list list-bullet">
+        <li>use the <a href="">standard template</a></li>
+        <li>explain to users whats going on</li>
+        <li>tell users what they can do, if anything to resolve the issue.</li>
+        <li>If there is an alternative channel that they can use to continue their transaction this should be made available
+          to them.</li>
+      </ul>
+
+      <h3 class="heading-small">Example 500 page</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/500-pages/500.html" %}
+        </div>
+      </div>
+      <p><a href="500-pages/500.html" target="_blank">View in a browser</a></p>
+
+
+      <h3 class="heading-small">Example 500 page when there is an alternative channel</h3>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "pages/500-pages/500-alternative-channel.html" %}
+        </div>
+      </div>
+      <p><a href="500-pages/500-alternative-channel.html" target="_blank">View in a browser</a></p>
+
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}
+
+

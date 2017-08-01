@@ -1,19 +1,16 @@
-{% extends "layout-template-blank.html" %}
+{% extends "govuk-template.html" %}
 
-{% block page_title %}
-  404
+{% block header %}
+{% import "patterns/macro/header.html" as index %}
+{{ index.header(proposition=true) }}
 {% endblock %}
 
 {% block content %}
-
 <main id="content" role="main">
-  {% include "patterns/header/includes/phase_banner_beta.html" %}
-  {% include "patterns/header/includes/hmrc_logo_banner_signed_in.html" %}
-  {% include "patterns/header/includes/welsh_toggle.html" %}
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <h1 class="heading-large">This page cannot be found</h1>
+      <h1 class="heading-large">{% block h1 %}This page cannot be found{% endblock %}</h1>
       
       <p>Please check the address is correct</p>
 
@@ -29,7 +26,4 @@
 
   </div>
 </main>
-
 {% endblock %}
-
-

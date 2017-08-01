@@ -1,11 +1,27 @@
-{% extends "govuk_template-empty.html" %}
+{% extends "govuk-template.html" %}
 
-{% block page_title %}
-  404
+{% block header %}
+{% import "patterns/macro/header.html" as index %}
+{{ index.header(proposition=true) }}
 {% endblock %}
 
 {% block content %}
-  {% include "pages/404-pages/patterns/404-intellignet.html" %}
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">{% block h1 %}This page cannot be found{% endblock %}</h1>
+
+      <p>It looks like you are trying to get to a page that doesn't exsist.</p>
+
+      <p>Please contact HMRC on 03000 555 995 so that we can help you resolve this issue.</p>
+
+      <p>Opening times: 8:30am to 4:30pm, Monday to Friday</p>
+
+      <!--@todo content needs to be refined for this. This page is aimed at users who can not self help and the pohone number should go the one of the needs enhanced support teams -->
+
+    </div>
+
+  </div>
+</main>
 {% endblock %}
-
-

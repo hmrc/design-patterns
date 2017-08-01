@@ -1,11 +1,30 @@
-{% extends "govuk_template-empty.html" %}
+{% extends "govuk-template.html" %}
 
-{% block page_title %}
-  Service unavailable
+{% block header %}
+{% import "patterns/macro/header.html" as index %}
+{{ index.header(proposition=true) }}
 {% endblock %}
 
 {% block content %}
-  {% include "pages/shutter-pages/patterns/tc-notyet.html" %}
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">{% block h1 %}Service unavailable{% endblock %}</h1>
+
+        <p>You will be able to renew your tax credits on or after Friday 21 April 2017. You can renew when you get your renewal pack through the post.</p>
+        
+        <p>You can <a href="#">use the tax credits service</a> to:</p>
+
+        <ul class="list-bullet">
+            <li>find out more about your payments</li>
+            <li>see who is on your claim</li>
+            <li>make changes to your claim</li>
+            <li>check the status of your renewal</li>
+        </ul>
+        
+    </div>
+
+  </div>
+</main>
 {% endblock %}
-
-
