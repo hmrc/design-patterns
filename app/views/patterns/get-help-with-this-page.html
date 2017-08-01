@@ -1,14 +1,12 @@
 {% extends "govuk-template.html" %}
 
-{% block page_title %}Get help with this page pattern{% endblock %}
-
 {% block content %}
 
 <main id="content" role="main">
   <div class="grid-row">
     <div class="column-two-thirds">
       {% include "includes/back.html" %}
-      <h1 class="heading-xlarge">Get help with this page</h1>
+      <h1 class="heading-xlarge">{% block h1 %}Get help with this page{% endblock %}</h1>
       <div class="scale-wrapper">
         <div class="scale">
           {% include "patterns/blank/get-help-with-this-page.html" %}

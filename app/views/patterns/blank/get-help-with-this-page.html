@@ -1,18 +1,19 @@
 {% extends "govuk-template-blank.html" %}
-
-{% block page_title %}Get help with this page pattern{% endblock %}
-
+{% block h1 %}Get help with this <page></page>{% endblock %}
 {% block content %}
 
-<main id="content" role="main">
-  <div id="report-error-partial-form" class="report-error__content">
+<main id="content">
+  <div class="report-error">
+    <a class="report-error__toggle js-visible" id="get-help-action" href="#error-feedback-form">Is there anything wrong
+      with this page?</a>
+    <div id="report-error-partial-form" class="report-error__content">
 
-    <h2 class="heading-medium">Get help using this service</h2>
-    <p>Don't include any personal or financial information. For example, your National Insurance or credit card
-      numbers.</p>
+      <h2 class="heading-medium">Tell us whats wrong with this page.</h2>
+      <p>Don't include any personal or financial information. For example, your National Insurance or credit card
+        numbers.</p>
 
-    <form action="/contact/problem_reports_secure" method="POST" id="error-feedback-form" class="form--feedback"
-          novalidate="novalidate">
+      <form action="/contact/problem_reports_secure" method="POST" id="error-feedback-form" class="form--feedback"
+            novalidate="novalidate">
 
       <fieldset>
         <legend class="visuallyhidden">Get help using this service</legend>
@@ -53,6 +54,7 @@
         </div>
       </fieldset>
     </form>
+    </div>
   </div>
 </main>
 

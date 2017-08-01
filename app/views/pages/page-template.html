@@ -1,7 +1,5 @@
 {% extends "govuk-template.html" %}
 
-{% block page_title %}HMRC page template{% endblock %}
-
 {% block header %}
 {% import "patterns/macro/header.html" as index %}
 {{ index.header(serviceName='HMRC page template', proposition=true) }}
@@ -15,7 +13,7 @@
 
       {% include "includes/back.html" %}
 
-      <h1 class="heading-xlarge">HMRC Page template</h1>
+      <h1 class="heading-xlarge">{% block h1 %}HMRC page template{% endblock %}</h1>
 
       <div class="alert alert--info">
         <p class="alert__message">These patterns are work in progress.</p>

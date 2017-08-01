@@ -1,7 +1,5 @@
 {% extends "govuk-template.html" %}
 
-{% block page_title %}Footer pattern{% endblock %}
-
 {% block content %}
 
 <main id="content" role="main">
@@ -10,7 +8,7 @@
 
       {% include "includes/back.html" %}
 
-      <h1 class="heading-xlarge">HMRC Footer</h1>
+      <h1 class="heading-xlarge">{% block h1 %}HMRC Footer{% endblock %}</h1>
 
       <div class="alert alert--info">
         <p class="alert__message">These patterns are work in progress.</p>

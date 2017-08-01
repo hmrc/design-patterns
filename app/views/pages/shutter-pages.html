@@ -1,10 +1,8 @@
 {% extends "govuk-template.html" %}
 
-{% block page_title %}HMRC shutter pages{% endblock %}
-
 {% block header %}
   {% import "patterns/macro/header.html" as index %}
-  {{ index.header(serviceName='HMRC shutter pages', proposition=true) }}
+  {{ index.header(serviceName='HMRC design patterns', proposition=true) }}
 {% endblock %}
 
 {% block content %}
@@ -14,7 +12,7 @@
 
       {% include "includes/back.html" %}
 
-      <h1 class="heading-xlarge">Shutter pages</h1>
+      <h1 class="heading-xlarge">{% block h1 %}Shutter pages{% endblock %}</h1>
 
       <div class="alert alert--info">
         <p class="alert__message">This patterns is work in progress.</p>

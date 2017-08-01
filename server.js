@@ -114,7 +114,6 @@ app.locals.cookieText = config.cookieText
 app.locals.promoMode = promoMode
 app.locals.releaseVersion = 'v' + releaseVersion
 app.locals.serviceName = config.serviceName
-
 // Support session data
 app.use(session({
   cookie: {

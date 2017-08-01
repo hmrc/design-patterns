@@ -1,10 +1,10 @@
 {% extends "govuk-template.html" %}
 
-{% block page_title %}HMRC page template{% endblock %}
+{% block h1 %}HMRC page template{% endblock %}
 {% block header %}{% endblock %}
 {% block content %}
 {% import "patterns/macro/header.html" as pattern %}
-{{ pattern.header(serviceName='Page template', proposition=true) }}
+{{ pattern.header(proposition=true) }}
 <main id="content">
   {% import "patterns/macro/banner.html" as pattern %}
   {{ pattern.banner(hmrc=true, beta=true, signedIn=true) }}
