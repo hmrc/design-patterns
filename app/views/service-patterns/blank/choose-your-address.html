@@ -1,0 +1,47 @@
+{% extends "govuk-template-blank.html" %}
+{% block content %}
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form>
+        <div class="form-group">
+          <fieldset>
+            <legend>
+              <h1 class="heading-xlarge">{% block h1 %}Choose your address{% endblock %}</h1>
+            </legend>
+            <div class="multiple-choice">
+              <input id="radio-inline-1" type="radio" name="radio-inline-group">
+              <label for="radio-inline-1">1 Romform Road, Wellington, Telford, TF1 4ER</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-inline-2" type="radio" name="radio-inline-group">
+              <label for="radio-inline-2">2 Romform Road, Wellington, Telford, TF1 4ER</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-inline-3" type="radio" name="radio-inline-group">
+              <label for="radio-inline-3">3 Romform Road, Wellington, Telford, TF1 4ER</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-inline-4" type="radio" name="radio-inline-group">
+              <label for="radio-inline-4">4 Romform Road, Wellington, Telford, TF1 4ER</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-inline-5" type="radio" name="radio-inline-group">
+              <label for="radio-inline-5">5 Romform Road, Wellington, Telford, TF1 4ER</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-inline-6" type="radio" name="radio-inline-group">
+              <label for="radio-inline-6">6 Romform Road, Wellington, Telford, TF1 4ER</label>
+            </div>
+          </fieldset>
+        </div>
+        <p><a href="">Search again</a></p>
+        <p><a href="">The address is not on the list</a></p>
+        <div class="form-field">
+          <input class="button" type="submit" value="Next">
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock %}
