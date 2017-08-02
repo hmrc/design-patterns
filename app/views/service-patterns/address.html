@@ -1,0 +1,30 @@
+{% extends "govuk-template.html" %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      {% include "includes/back.html" %}
+      <h1 class="heading-xlarge">{% block h1 %}Address{% endblock %}</h1>
+
+      <h2 class="heading-large">Does the address have a UK postcode</h2>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "service-patterns/blank/does-the-address.html" %}
+        </div>
+      </div>
+      <p><a href="blank/does-the-address.html" target="_blank">View in a new window</a></p>
+
+      <h2 class="heading-large">Enter address</h2>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "service-patterns/blank/enter-address.html" %}
+        </div>
+      </div>
+      <p><a href="blank/enter-address.html" target="_blank">View in a new window</a></p>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
