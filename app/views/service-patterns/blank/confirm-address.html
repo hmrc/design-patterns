@@ -1,0 +1,25 @@
+{% extends "govuk-template-blank.html" %}
+{% block content %}
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form>
+        <div class="form-group">
+          <fieldset class="inline">
+            <legend>
+              <h1 class="heading-xlarge">{% block h1 %}Confirm the address{% endblock %}</h1>
+            </legend>
+            <p>4 Romform Road<br/>
+              Wellington<br/>
+              Telford<br/>
+              TF1 4ER</p>
+            <div class="form-field">
+              <input class="button" type="submit" value="Find address">
+            </div>
+          </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+</main>
+{% endblock %}
