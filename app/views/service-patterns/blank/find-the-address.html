@@ -1,0 +1,39 @@
+{% extends "govuk-template-blank.html" %}
+{% block content %}
+<main id="content">
+  <form>
+    <div class="form-group">
+      <fieldset class="inline">
+        <legend>
+          <h1 class="heading-large">
+            {% block h1 %}Find the address where the company will carry out most of its business activities{% endblock %}
+          </h1>
+        </legend>
+        <div class="form-field">
+          <label class="form-label" for="property-name">Property name or number<span
+            class="form-hint">For example, The Mill, Flat A or 37b</span></label>
+          <input class="form-control" id="property-name" name="property-name">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="postcode">Postcode<span
+            class="form-hint">For example, ZZ1 ITA</span></label>
+          <input class="form-control" id="postcode" name="postcode">
+        </div>
+      </fieldset>
+    </div>
+    <div class="form-field">
+      <input class="button" type="submit" value="Find address">
+    </div>
+  </form>
+</main>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

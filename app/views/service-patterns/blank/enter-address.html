@@ -1,0 +1,54 @@
+{% extends "govuk-template-blank.html" %}
+{% block content %}
+<main id="content">
+  <form>
+    <div class="form-group">
+      <fieldset class="inline">
+        <legend>
+          <h1 class="heading-large">
+            {% block h1 %}Enter address{% endblock %}
+          </h1>
+        </legend>
+        <div class="form-field">
+          <label class="form-label" for="ni-number">Address line 1:<span
+            class="form-hint">Character limit: 25</span></label>
+          <input class="form-control" id="ni-number" type="text" name="ni-number">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="ni-number">Address line 2:<span
+            class="form-hint">Character limit: 25</span></label>
+          <input class="form-control" id="ni-number" type="text" name="ni-number">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="ni-number">Address line 3:<span
+            class="form-hint">Character limit: 25</span></label>
+          <input class="form-control" id="ni-number" type="text" name="ni-number">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="ni-number">Town:<span
+            class="form-hint">Character limit: 25</span></label>
+          <input class="form-control" id="ni-number" type="text" name="ni-number">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="ni-number">Country:<span
+            class="form-hint">Character limit: 25</span></label>
+          <input class="form-control" id="ni-number" type="text" name="ni-number">
+        </div>
+      </fieldset>
+    </div>
+    <div class="form-field">
+      <input class="button" type="submit" value="Next">
+    </div>
+  </form>
+</main>
+{% endblock %}}
+
+
+
+
+
+
+
+
+
+

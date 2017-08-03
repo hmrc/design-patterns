@@ -1,0 +1,28 @@
+{% extends "govuk-template-blank.html" %}
+{% block content %}
+<main id="content">
+  <form>
+    <div class="form-group">
+      <fieldset class="inline">
+        <legend>
+          <h1 class="heading-large">
+            {% block h1 %}Does the address have a UK postcode{% endblock %}
+          </h1>
+        </legend>
+
+        <div class="multiple-choice">
+          <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+          <label for="radio-inline-1">Yes</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+          <label for="radio-inline-2">No</label>
+        </div>
+      </fieldset>
+    </div>
+    <div class="form-field">
+      <input class="button" type="submit" value="Save and continue">
+    </div>
+  </form>
+</main>
+{% endblock %}}
