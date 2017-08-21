@@ -2,7 +2,7 @@
 {% block h1 %}Header signed in{% endblock %}
 {% block content %}
 {% import "patterns/macro/header.html" as pattern %}
-{{ pattern.header(proposition=true) }}
+{{ pattern.header(proposition=true, signedIn=true, navigation=true) }}
 <main id="content">
   {% import "patterns/macro/banner.html" as pattern %}
   {{ pattern.banner(hmrc=true, beta=true, signedIn=true) }}

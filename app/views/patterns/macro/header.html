@@ -2,6 +2,7 @@
 serviceName='Service name',
 proposition,
 navigation,
+signedIn,
 cookie
 ) %}
 
@@ -25,14 +26,14 @@ cookie
       <div class="content">
         <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
         <nav id="proposition-menu">
-          <a href="/" id="proposition-name">{{serviceName}}</a>
-          {% if navigation %}
-          <ul id="proposition-links">
-            <li><a href="url-to-page-1" class="active">Navigation item #1</a></li>
-            <li><a href="url-to-page-2">Navigation item #2</a></li>
+        <ul class="service-info">
+          <li><a href="/" id="proposition-name">{{serviceName}}</a></li>
+          {% if signedIn %}
+          <li class="signout-link"><a href="#">Sign out</a> </li>
+          {% endif %}            
           </ul>
-          {% endif %}
         </nav>
+
       </div>
     </div>
     {% endif %}

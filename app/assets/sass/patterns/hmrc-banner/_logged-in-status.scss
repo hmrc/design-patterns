@@ -6,3 +6,35 @@
     margin: 0;
   }
 }
+@media (min-width: 769px){
+.desktop-hidden {
+    display: none !important;
+	}
+}
+
+#proposition-links li:last-child{
+	float: right;
+}
+
+.header-logo a {
+    padding-left: 36px;
+    padding-top: 4px;
+    border: none;
+}
+
+.service-info li {
+	display: inline-block;
+}
+
+.signout-link{
+	float: right;
+}
+
+.signout-link a{
+	color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 16px;
+    padding-right: 15px;
+    vertical-align: middle;
+}
