@@ -1,0 +1,36 @@
+{% extends "govuk-template.html" %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      {% include "includes/back.html" %}
+
+      <h1 class="heading-xlarge">{% block h1 %}Session Timeout Modal{% endblock %}</h1>
+
+      <div class="alert alert--info">
+        <p class="alert__message">This patterns is work in progress.</p>
+        <p class="alert__message">View the todo list for this pattern on <a href="https://github.com/hmrc/design-language-documentation/issues/89">GitHub</a>.</p>
+      </div>
+
+      <h2 class="heading-large">Session Timeout Modal design</h2>
+
+      <p>As someone with a visual impairment, dexterity impairments or cognitive limitations, when I’m using the P800 Tax Calculation Repayments service, I need to be prompted when my session is about to end so that I can continue entering my details to claim my repayment.</p>
+      
+      <h3 class="heading-medium">Interactive session timeout</h3>
+
+      <p>The example page that the session timeout modal is displayed on is from the Repayments service, and is used to demonstrate the focus is set back to the input field being used at the time the modal is triggered.</p>
+      <p>Note: For demonstrations purposes the session timeout is set to appear after 10 seconds.</p>
+
+      <p><a href="session-timeout-modal/timeout-modal.html" target="_blank">View in a new window</a></p>
+
+    </div>
+  </div>
+</main>
+
+
+{% endblock %}
+
+

@@ -1,0 +1,87 @@
+{% extends "govuk-template.html" %}
+
+{% block h1 %}HMRC page template{% endblock %}
+{% block header %}{% endblock %}
+{% block content %}
+{% import "patterns/macro/header.html" as pattern %}
+{{ pattern.header(proposition=true) }}
+<main id="content">
+  {% import "patterns/macro/banner.html" as pattern %}
+  {{ pattern.banner(hmrc=true, beta=true, signedIn=true) }}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large">Address details</h1>
+      <div class="panel panel-border-wide" >This is the address that the bank uses for your account, it is not the bank's address.</div>
+
+      <form method="post" action="refund-and-bank-address-edit" >
+        <h3 class="heading-medium">Address</h3>
+
+        <div class="form-group">
+          <label class="form-label" for="addressline1"><!--House number or name, and street--></label>
+          <input class="form-control" id="addressline1" name="addressLine1" type="text" value="{{addressLine1}}" tabindex='1'>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="addressline2"><!--Building and street--></label>
+          <input class="form-control" id="addressline2" name="addressLine2" type="text" value="{{addressLine2}}">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="town"><!--Town or city--></label>
+          <input class="form-control" id="town" name="town" type="text" value="{{town}}">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="county"><!--County (optional)--></label>
+          <input class="form-control" id="county" name="county" type="text" value="{{county}}">
+        </div>
+
+        <h3 class="heading-medium">Postcode</h3>
+        <div class="form-group">
+          <label class="form-label" for="postcode"><!--Postcode--></label>
+          <input class="form-control" id="postcode" name="postcode" type="text" value="{{postcode}}">
+        </div>
+
+
+        <div class="panel panel-border-wide" ><p>If you want HM Revenue and Customs to make this your main home address, you’ll need to update your address details in your personal tax account.</p>
+
+          <p>You can do this after your request for a refund has been submitted.</p></div>
+
+
+        <button type="submit" class="button">Continue</button>
+      </form>
+
+      <br>
+
+      <!-- Back button -->
+      <a href="javascript:window.history.back();" class="link-back">Back</a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+{% block pageScripts %}
+
+<script src="{{ asset_path }}javascripts/timeout-dialog.js"></script>
+
+<script>
+    var my_title = document.getElementById("proposition-name");
+    my_title.innerHTML = "Check the Income Tax you paid";
+</script>
+
+<script type="text/javascript" charset="utf-8">
+
+  $.timeoutDialog({
+    timeout: 125,
+    title: 'You’re about to be signed out',
+    logout_url: 'sessionTimeout'
+  });
+
+  window.dialogOpen;
+
+</script>
+
+{% endblock %}
+
