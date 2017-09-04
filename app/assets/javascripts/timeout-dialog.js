@@ -3,25 +3,6 @@
  *
  * @author: Rodrigo Neri (@rigoneri)
  *
- * (The MIT License)
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
  */
 
 Date.now = Date.now || function() { return +new Date; };
@@ -41,16 +22,6 @@ function secondsToTime (secs) {
     's': seconds
   }
   return obj
-}
-
-String.prototype.format = function () {
-  var s = this
-  var i = arguments.length
-
-  while (i--) {
-    s = s.replace(new RegExp('\\{' + i + '\\}', 'gm'), arguments[i])
-  }
-  return s
 }
 
 !function ($) {
@@ -121,8 +92,9 @@ String.prototype.format = function () {
         modalFocus.focus()
         self.addEvents()
         self.startCountdown(settings.countdown)
+               
         self.escPress = function (event) {
-          if (window.dialogOpen && event.keyCode === 27) {
+          if (self.dialogOpen && event.keyCode === 27) {
             // close the dialog
             self.keepAlive()
             activeElement.focus()
