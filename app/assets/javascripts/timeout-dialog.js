@@ -31,7 +31,7 @@ function secondsToTime (secs) {
       countdown: 120,
       time: 'minutes',
       title: '',
-      message: 'For your security reasons, you will be signed out of this service in',
+      message: 'For security reasons, you will be signed out of this service in',
       keep_alive_url: '/keep-alive',
       logout_url: '/sign-out',
       restart_on_yes: true,
