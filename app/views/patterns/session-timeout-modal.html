@@ -24,8 +24,26 @@
       <p>The example page that the session timeout modal is displayed on is from the Repayments service, and is used to demonstrate the focus is set back to the input field being used at the time the modal is triggered.</p>
       <p>Note: For demonstrations purposes the session timeout is set to appear after 10 seconds.</p>
 
+      <div class="scale-wrapper">
+        <div class="scale">
+          <img src="/public/images/session-timeout-modal.png">
+        </div>
+      </div>
+
       <p><a href="session-timeout-modal/timeout-modal.html" target="_blank">View in a new window</a></p>
 
+      <h3 class="heading-medium">Static session timeout modal</h3>
+      <p>Static version to test the markup of the modal. None of the accessibility or correct functionality will work.</p>
+      <p><a href="session-timeout-modal/timeout-modal-static.html" target="_blank">View in a new window</a></p>
+
+      <h3 class="heading-medium">Session timeout page</h3>
+      <p>If the user chooses to sign out, or they don't choose to stay signed in, they automatically get signed out of the service and redirected to this page.</p>
+      <div class="scale-wrapper">
+        <div class="scale">
+          {% include "patterns/session-timeout-modal/sessionTimeout.html" %}
+        </div>
+      </div>
+      <p><a href="session-timeout-modal/sessionTimeout.html" target="_blank">View in a new window</a></p>
     </div>
   </div>
 </main>
