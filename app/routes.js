@@ -3,7 +3,7 @@ var router = express.Router()
 
 // Route index page
 router.get('/', function (req, res) {
-  res.render('govuk-template.html')
+  res.redirect(301, "http://hmrc.github.io/assets-frontend/")
 })
 
 // add your routes here
