@@ -55,6 +55,7 @@
         <li><a href="patterns/header">Header</a></li>
         <li><a href="patterns/footer">Footer</a></li>
         <li><a href="patterns/get-help-with-this-page">Get help with this page</a></li>
+        <li><a href="patterns/session-timeout-modal">Session Timeout Modal</a></li>
       </ul>
 
 
@@ -87,6 +88,9 @@
 
 {% block scripts %}
   {% include "includes/scripts.html" %}
+{% endblock %}
+
+{% block pageScripts %}
 {% endblock %}
 
 <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
