@@ -10,12 +10,12 @@ Use this section to:
 * provide a code snippet (if you have it)
 
 ## Is it useful and unique?
-Explain how the component or pattern meets the GOV.UK Design System criteria.
+Explain how the component or pattern meets the GOV.UK Design System criteria. Find out more at https://design-system.service.gov.uk/community/contribution-criteria/#new-proposals
 
 ## Other components or patterns you've tried
-Explain why existing components or patterns do not meet your user need. Provide examples of others you’ve tried and screenshots that demonstrate why they did not work (if you have them). 
+Explain why existing components or patterns do not meet your user need. Provide examples of others you have tried and screenshots that demonstrate why they did not work (if you have them). 
 
-## Research
+## Research on this pattern
 Summarise any research about the component or pattern and describe any gaps or questions you still need to answer.
 
 Only include links to things in the public domain.
