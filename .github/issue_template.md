@@ -1,5 +1,5 @@
 <!--
-If you are suggesting a change to something that already exists in the HMRC Design Library, please propose it by commenting on its issue. You can find issues for all published content in the 'Published' column of the HMRC Design Library backlog.
+If you are suggesting a change to something that already exists in the HMRC Design Library, propose it by commenting on its issue. You can find issues for all published content in the 'Published' column of the HMRC Design Library backlog.
 
 If you need help putting your proposal together, you can email the Service Design Tools team at hmrc-service-design-tools-g@digital.hmrc.gov.uk.
 -->
