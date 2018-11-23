@@ -1,14 +1,17 @@
-# HMRC design pattern documentation
-This repo contains examples of design patterns used in HMRC services.
+# HMRC Design Patterns
 
-**These patterns should not be used in production services at the moment this is just a prototype to help documenting patterns**
+This is a place to propose new patterns and discuss existing ones for HMRC Design Patterns.
 
-## Documenting patterns
-If you are working on a pattern for an HMRC service and it's not covered in the [issues](https://github.com/hmrc/design-language-documentation/issues) in this repo please create an issue.
-## Hosting
-This repo is published to https://hmrc-design-patterns.herokuapp.com/
+## New patterns
 
-## Contributing
+[Check our backlog](https://github.com/hmrc/design-patterns/issues) to see if the pattern you need is already being worked on. If it is, add your findings to the issue. If it has not, [create a new issue](https://github.com/hmrc/design-patterns/issues/new).
 
-To follow
+All patterns must be [useful and unique](https://design-system.service.gov.uk/community/contribution-criteria/#new-proposals).
 
+## Existing patterns
+
+Comment on the issue to suggest improvements or add findings.
+
+## Support
+
+If you have a question, idea or suggestion you can [email the Service Design Tools team](hmrc-service-design-tools-g@digital.hmrc.gov.uk).
