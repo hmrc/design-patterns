@@ -2,20 +2,16 @@
 
 This is a place to propose new patterns and discuss existing ones for HMRC Design Patterns.
 
-## Proposing a new pattern
+## New patterns
 
-First [check our backlog](https://github.com/hmrc/design-patterns/issues), to see if your pattern has already been proposed. If it has, you can add your findings by commenting on the issue. If it has not, you can [create a new issue](https://github.com/hmrc/design-patterns/issues/new).
+[Check our backlog](https://github.com/hmrc/design-patterns/issues) to see if the pattern you need is already being worked on. If it is, add your findings to the issue. If it has not, [create a new issue](https://github.com/hmrc/design-patterns/issues/new).
 
-All new patterns must be [useful and unique](https://design-system.service.gov.uk/community/contribution-criteria/#new-proposals).
+All patterns must be [useful and unique](https://design-system.service.gov.uk/community/contribution-criteria/#new-proposals).
 
-## Discussing existing patterns
+## Existing patterns
 
-You can suggest improvements to existing patterns by commenting on the issue.
+Comment on the issue to suggest improvements or add findings.
 
 ## Support
 
 If you have a question, idea or suggestion you can [email the Service Design Tools team](hmrc-service-design-tools-g@digital.hmrc.gov.uk).
- 
-
-
-
