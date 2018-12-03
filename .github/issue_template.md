@@ -13,7 +13,7 @@ If you need help putting your proposal together, you can email the Service Desig
 Use this section to:
 
 * explain, in one line, how the pattern helps users
-* provide a screenshot or a direct link to a section of a journey on a prototype (do not include the username or password)
+* provide a screenshot of the pattern
 * provide a code snippet (if you have it)
 
 ## Is it useful and unique?
