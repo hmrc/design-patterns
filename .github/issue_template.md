@@ -1,7 +1,7 @@
 <!--
 If you are suggesting a change to something that already exists in HMRC Design Patterns, propose it by commenting on the GitHub issue. You can find issues for all published content in the 'Published' column of the HMRC Design Patterns backlog.
 
-If you need help putting your proposal together, you can email the Service Design Tools team at hmrc-service-design-tools-g@digital.hmrc.gov.uk.
+If you need help putting your proposal together, you can email the Platform UI team at platform-ui@digital.hmrc.gov.uk.
 -->
 
 

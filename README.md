@@ -14,4 +14,4 @@ Comment on the issue to suggest improvements or add findings.
 
 ## Support
 
-If you have a question, idea or suggestion you can [email the Service Design Tools team](hmrc-service-design-tools-g@digital.hmrc.gov.uk).
+If you have a question, idea or suggestion you can [email the Platform UI team](mailto:platform-ui@digital.hmrc.gov.uk).
